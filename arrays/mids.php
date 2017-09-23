@@ -1,5 +1,5 @@
 <?php
-array basic = {
+array basic(
 
-}
+)
  ?>

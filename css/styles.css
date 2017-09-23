@@ -1,7 +1,7 @@
 body{
 text-align: center;
 background-color: black;
-color: white;
+color: #faebd7;
 font-family: arial;
 }
 h1{
@@ -13,6 +13,7 @@ input{
   text-align: center;
   font-size: 24px;
   font-weight: bold;
+  background-color: #faebd7;
 }
 footer{
   float: right;
