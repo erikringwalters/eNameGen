@@ -7,7 +7,7 @@
 <h1>eNameGen</h1>
 <div>
   <input type="text" />
-</div>
+
 <div class="dropdown">
   <button onclick="selectFromMenu()" class="dropbtn">***</button>
   <div id="drop" class="dropdown-content">
@@ -17,25 +17,26 @@
     <a href="">Feedback</a>
   </div>
 </div>
- <script> // type="text/JavaScript" src="./js.scripts.js">
+</div>
+ <script type="text/JavaScript" src="js/scripts.js">
 
-function selectFromMenu(){
-  document.getElementById("drop").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if(!event.target.matches('.dropbtn'))//if clicked something other than dropdown button
-  {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for(i = 0; i < dropdowns.length;i++){
-      var openDropdown = dropdowns[i];
-      if(openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+// function selectFromMenu(){
+//   document.getElementById("drop").classList.toggle("show");
+// }
+//
+// window.onclick = function(event) {
+//   if(!event.target.matches('.dropbtn'))//if clicked something other than dropdown button
+//   {
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for(i = 0; i < dropdowns.length;i++){
+//       var openDropdown = dropdowns[i];
+//       if(openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
 </script>
 
 <footer>
