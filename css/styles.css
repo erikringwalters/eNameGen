@@ -1,0 +1,22 @@
+body{
+text-align: center;
+background-color: black;
+color: white;
+font-family: arial;
+}
+h1{
+  margin:30px
+}
+input{
+  height: 30px;
+  width: 175px;
+}
+footer{
+  float: right;
+  height: 50px;
+  width: 200px;
+  margin: 0px,50px,0px,0px;
+  padding: 0px, 30px;
+  bottom: 0;
+  color: #333333;
+}
