@@ -10,6 +10,9 @@ h1{
 input{
   height: 30px;
   width: 175px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 footer{
   float: right;
