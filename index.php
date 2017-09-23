@@ -2,7 +2,6 @@
 <head>
 <title>eNameGen</title>
 <link href="./css/styles.css" rel="stylesheet" type="text/css" />
-<link href="./jQuery/jquery-3.2.1.js" rel="JavaScript" />
 </head>
 <body>
 <h1>eNameGen</h1>
@@ -18,6 +17,26 @@
     <a href="">Feedback</a>
   </div>
 </div>
+ <script> // type="text/JavaScript" src="./js.scripts.js">
+
+function selectFromMenu(){
+  document.getElementById("drop").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if(!event.target.matches('.dropbtn'))//if clicked something other than dropdown button
+  {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for(i = 0; i < dropdowns.length;i++){
+      var openDropdown = dropdowns[i];
+      if(openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 <footer>
   <!-- &copy Ring-Walters 2017 -->
