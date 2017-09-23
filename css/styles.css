@@ -13,31 +13,44 @@ input{
   text-align: center;
   font-size: 24px;
   font-weight: bold;
+  outline: none;
+  border: none;
   background-color: #faebd7;
 }
 footer{
-  float: right;
-  height: 50px;
-  width: 200px;
-  margin: 0px,50px,0px,0px;
-  padding: 0px, 30px;
-  bottom: 0;
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  margin: 20;
   color: #333333;
 }
+button{
+  /*background-color: black;*/
+  color: antiquewhite;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+button:hover, button:focus{
 
+  outline: none;
+}
 /* Dropdown Button (pulled from W3Schools)*/
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+    /*background-color: black;*/
+    opacity: 1;
+    color: antiquewhite;
+    /*padding: 16px;
+    font-size: 16px;*/
     border: none;
     cursor: pointer;
+
 }
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    /*background-color: #3e8e41;*/
+    outline: none;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -50,22 +63,33 @@ footer{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: antiquewhite;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    right: 0;
+    top: 25px;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
+    font-weight: bold;
     text-decoration: none;
     display: block;
 }
+.mod{
+  padding: 5px
+}
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #cdc0b0}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+#delta{
+  font-size: 24;
+  cursor: pointer;
+}

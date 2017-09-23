@@ -4,12 +4,17 @@
 <link href="./css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+  <?phpsetDefaults();?>
 <h1>eNameGen</h1>
 <div>
+
+<a id='delta' onclick='displayName($size,$race,$sex)' class='delta mod'>
+Δ
+</a>
   <input type="text" />
 
 <div class="dropdown">
-  <button onclick="selectFromMenu()" class="dropbtn">***</button>
+  <a onclick="selectFromMenu()" class="dropbtn mod">***</a>
   <div id="drop" class="dropdown-content">
     <a href="">Size</a>
     <a href="">Race</a>
@@ -19,27 +24,9 @@
 </div>
 </div>
  <script type="text/JavaScript" src="js/scripts.js">
-
-// function selectFromMenu(){
-//   document.getElementById("drop").classList.toggle("show");
-// }
-//
-// window.onclick = function(event) {
-//   if(!event.target.matches('.dropbtn'))//if clicked something other than dropdown button
-//   {
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for(i = 0; i < dropdowns.length;i++){
-//       var openDropdown = dropdowns[i];
-//       if(openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// }
 </script>
 
 <footer>
-  <!-- &copy Ring-Walters 2017 -->
+  &copy Ring-Walters 2017
 </footer>
 </body>
