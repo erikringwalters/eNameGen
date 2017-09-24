@@ -1,8 +1,11 @@
+
 body{
 text-align: center;
-background-color: black;
-color: #faebd7;
+background-color: #302a29;
 font-family: arial;
+}
+.main{
+  color:antiquewhite;
 }
 h1{
   margin:30px
@@ -26,7 +29,6 @@ footer{
 }
 button{
   /*background-color: black;*/
-  color: antiquewhite;
   outline: none;
   border: none;
   cursor: pointer;
@@ -39,7 +41,6 @@ button:hover, button:focus{
 .dropbtn {
     /*background-color: black;*/
     opacity: 1;
-    color: antiquewhite;
     /*padding: 16px;
     font-size: 16px;*/
     border: none;

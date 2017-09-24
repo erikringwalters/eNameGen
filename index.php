@@ -5,16 +5,16 @@
 </head>
 <body>
   <?phpsetDefaults();?>
-<h1>eNameGen</h1>
+<h1 class="main">eNameGen</h1>
 <div>
 
-<a id='delta' onclick='displayName($size,$race,$sex)' class='delta mod'>
+<a id='delta' onclick='functions.php?' class='delta mod main'>
 Δ
 </a>
   <input type="text" />
 
 <div class="dropdown">
-  <a onclick="selectFromMenu()" class="dropbtn mod">***</a>
+  <a onclick="selectFromMenu()" class="dropbtn mod main">***</a>
   <div id="drop" class="dropdown-content">
     <a href="">Size</a>
     <a href="">Race</a>
