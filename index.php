@@ -14,12 +14,20 @@
   <input type="text" />
 
 <div class="dropdown">
-  <a onclick="selectFromMenu()" class="dropbtn mod main">***</a>
+  <a onclick="selectMenu()" class="dropbtn mod main">***</a>
   <div id="drop" class="dropdown-content">
-    <a href="">Size</a>
-    <a href="">Race</a>
-    <a href="">Gender</a>
-    <a href="">Feedback</a>
+    <a onClick="selectSize()" class="dropbtn mod main">Size</a>
+    <div id="size" class="dropbtn mod main">
+      <a href="" id='small' class="dropbtn mod main">Small</a>
+      <a href="" id='medium' class="dropbtn mod main">Medium</a>
+      <a href="" id='large' class="dropbtn mod main">Large</a>
+    </div>
+    <a href="#race" class="dropbtn mod main">Race</a>
+    <div id='race'>
+
+    </div>
+    <a href="#gender" id="gender" class="dropbtn mod main">Gender</a>
+    <a href="#feedback" id="feedback" class="dropbtn mod main">Feedback</a>
   </div>
 </div>
 </div>

@@ -1,6 +1,9 @@
 
-function selectFromMenu(){
+function selectMenu(){
   document.getElementById("drop").classList.toggle("show");
+}
+function selectSize(){
+  document.getElementById("size").classList.toggle("show");
 }
 
 window.onclick = function(event) {
