@@ -98,6 +98,10 @@ button:hover, button:focus{
   font-size: 24;
   cursor: pointer;
 }
+#nabla{
+  font-size: 24;
+  cursor: pointer;
+}
 #size{
   right: 0;
 }

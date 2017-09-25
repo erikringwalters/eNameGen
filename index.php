@@ -14,7 +14,7 @@
   <input type="text" />
 
 <div class="dropdown">
-  <a onClick="selectMenu()" class="dropbtn mod main">∇</a>
+  <a id="nabla" onClick="selectMenu()" class="dropbtn mod main">∇</a>
   <div id="drop" class="dropdown-content">
 
     <a onClick="selectSize()" class="dropbtn mod main">Size</a>
