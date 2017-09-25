@@ -3,11 +3,13 @@
 <title>eNameGen</title>
 <link href="./css/styles.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="icons/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="img/triangle.png" type="image/x-icon">
 </head>
 <body>
   <?phpsetDefaults();?>
 <h1 class="main">eNameGen</h1>
 <div>
+
 
 <a id='delta' onclick='functions.php?' class='delta mod main'>
 Δ
@@ -46,6 +48,7 @@
 <footer>
   &copy Ring-Walters 2017
 <a href="https://github.com/erikringwalters" title="" alt="Erik's GitHub Profile"><i class="fa fa-github"></i></a>
+<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
 </footer>
 </body>
