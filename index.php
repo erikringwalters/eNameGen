@@ -16,12 +16,9 @@
 <div class="dropdown">
   <a onclick="selectMenu()" class="dropbtn mod main">***</a>
   <div id="drop" class="dropdown-content">
+
     <a onClick="selectSize()" class="dropbtn mod main">Size</a>
-    <div id="size" class="dropbtn mod main">
-      <a href="" id='small' class="dropbtn mod main">Small</a>
-      <a href="" id='medium' class="dropbtn mod main">Medium</a>
-      <a href="" id='large' class="dropbtn mod main">Large</a>
-    </div>
+
     <a href="#race" class="dropbtn mod main">Race</a>
     <div id='race'>
 
@@ -31,6 +28,17 @@
   </div>
 </div>
 </div>
+
+<div class="dropdown">
+<div id="size"class="dropdown-content">
+  <div  class="mod main">
+    <a href="" id='small' class="mod main">Small</a>
+    <a href="" id='medium' class="mod main">Medium</a>
+    <a href="" id='large' class="mod main">Large</a>
+  </div>
+</div>
+</div>
+
  <script type="text/JavaScript" src="js/scripts.js">
 </script>
 
