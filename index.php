@@ -2,6 +2,7 @@
 <head>
 <title>eNameGen</title>
 <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="icons/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <?phpsetDefaults();?>
@@ -44,5 +45,6 @@
 
 <footer>
   &copy Ring-Walters 2017
+  <a href"https://github.com/erikringwalters"><i class="fa fa-github" aria-hidden="true"> </i></a>
 </footer>
 </body>
