@@ -101,3 +101,12 @@ button:hover, button:focus{
 #size{
   right: 0;
 }
+#small{
+  font-size: 10px;
+}
+#medium{
+  font-size: 20px;
+}
+#large{
+  font-size: 30px;
+}

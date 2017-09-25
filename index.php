@@ -14,7 +14,7 @@
   <input type="text" />
 
 <div class="dropdown">
-  <a onclick="selectMenu()" class="dropbtn mod main">***</a>
+  <a onmouseover="selectMenu()" class="dropbtn mod main">***</a>
   <div id="drop" class="dropdown-content">
 
     <a onClick="selectSize()" class="dropbtn mod main">Size</a>
@@ -31,10 +31,10 @@
 
 <div class="dropdown">
 <div id="size"class="dropdown-content">
-  <div  class="mod main">
-    <a href="" id='small' class="mod main">Small</a>
-    <a href="" id='medium' class="mod main">Medium</a>
-    <a href="" id='large' class="mod main">Large</a>
+  <div  class="mod main"> <!--This third div gives a little inner color selection effect -->
+    <a href="" id='small' class="mod main" title="Small">*</a>
+    <a href="" id='medium' class="mod main" title="Medium">*</a>
+    <a href="" id='large' class="mod main" title="Large">*</a>
   </div>
 </div>
 </div>
