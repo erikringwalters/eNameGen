@@ -45,6 +45,7 @@
 
 <footer>
   &copy Ring-Walters 2017
-  <a href"https://github.com/erikringwalters"><i class="fa fa-github" aria-hidden="true"> </i></a>
+<a href="https://github.com/erikringwalters" title="" alt="Erik's GitHub Profile"><i class="fa fa-github"></i></a>
+
 </footer>
 </body>

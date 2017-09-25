@@ -20,6 +20,9 @@ input{
   border: none;
   background-color: #faebd7;
 }
+a, a:visited{
+  color: black;
+}
 footer{
   position: absolute;
   bottom: 5px;
@@ -95,11 +98,7 @@ button:hover, button:focus{
   position: relative;
 
 }
-#delta{
-  font-size: 24;
-  cursor: pointer;
-}
-#nabla{
+#delta, #nabla{
   font-size: 24;
   cursor: pointer;
 }
