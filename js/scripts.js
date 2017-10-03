@@ -5,6 +5,15 @@ function selectMenu(){
 function selectSize(){
   document.getElementById("size").classList.toggle("show");
 }
+function selectRace(){
+  document.getElementById("race").classList.toggle("show");
+}
+function selectGender(){
+  document.getElementById("gender").classList.toggle("show");
+}
+function selectFeedback(){
+  document.getElementById("feedback").classList.toggle("show");
+}
 
 window.onclick = function(event) {
   if(!event.target.matches('.dropbtn'))//if clicked something other than dropdown button
