@@ -42,10 +42,6 @@ button:hover, button:focus{
 }
 /* Dropdown Button (pulled from W3Schools)*/
 .dropbtn {
-    /*background-color: black;*/
-    opacity: 1;
-    /*padding: 16px;
-    font-size: 16px;*/
     border: none;
     cursor: pointer;
 
@@ -74,6 +70,12 @@ button:hover, button:focus{
     right: 0;
     top: 25px;
 }
+
+/*.sub {
+  position: relative;
+  margin: inherit;
+  left: 60px;
+}*/
 
 /* Links inside the dropdown */
 .dropdown-content a {

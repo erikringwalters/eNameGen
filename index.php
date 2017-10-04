@@ -32,7 +32,7 @@
 </div>
 
 <div class="dropdown">
-<div id="size" class="dropdown-content">
+<div id="size" class="dropdown-content sub">
   <div  class="mod main"> <!--This third div gives a little inner color selection effect -->
     <a href="" id='small' class="mod main" title="Small">*</a>
     <a href="" id='medium' class="mod main" title="Medium">*</a>
@@ -42,7 +42,7 @@
 </div>
 
 <div class="dropdown">
-<div id="race"class="dropdown-content">
+<div id="race"class="dropdown-content sub">
   <div  class="mod main"> <!--This third div gives a little inner color selection effect -->
   <a href="" id="human" class="mod main" title="Human">Human</a>
   <a href="" id="elf" class="mod main" title="Elf">Elf</a>
@@ -52,7 +52,7 @@
 </div>
 
 <div class="dropdown">
-<div id="gender" class="dropdown-content">
+<div id="gender" class="dropdown-content sub">
   <div  class="mod main"> <!--This third div gives a little inner color selection effect -->
   <a href="" id="male" class="mod main" title="Male">Male</a>
   <a href="" id="female" class="mod main" title="Female">Female</a>
@@ -62,7 +62,7 @@
 </div>
 
 <div class="dropdown">
-<div id="feedback" class="dropdown-content">
+<div id="feedback" class="dropdown-content sub">
   <div class="mod main">
     <a href="" id="Like" class="mod main" title="Like generated name">Like</a>
 
