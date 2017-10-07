@@ -3,6 +3,7 @@ body{
 text-align: center;
 background-color: #302a29;
 font-family: arial;
+font-weight: lighter;
 }
 .main{
   color:antiquewhite;
@@ -15,7 +16,7 @@ input{
   width: 175px;
   text-align: center;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: lighter;
   outline: none;
   border: none;
   background-color: #faebd7;
@@ -71,17 +72,17 @@ button:hover, button:focus{
     top: 25px;
 }
 
-/*.sub {
-  position: relative;
-  margin: inherit;
-  left: 60px;
-}*/
+.sub {
+  /*position: relative;*/
+  /*margin: inherit;*/
+  float: left;
+}
 
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
-    font-weight: bold;
+    font-weight: lighter;
     text-decoration: none;
     display: block;
 }
@@ -117,4 +118,7 @@ button:hover, button:focus{
 }
 #large{
   font-size: 30px;
+}
+#infoBtn{
+  cursor: pointer;
 }
