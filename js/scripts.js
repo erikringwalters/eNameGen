@@ -9,7 +9,6 @@ $(document).ready(function () {
         init: function () {
           $('#info').hide();
 
-
           $(".dropbtn").click(function(event){//sets current drop
             wpjs.currentDrop = this.id;
             //alert("currentDrop= " + wpjs.currentDrop)
@@ -59,8 +58,8 @@ $(document).ready(function () {
         })
       },
       selectDrop: function(){
-        $("#" + this.id).click(function() {
-          document.getElementById(this.id + "Drop").classList.toggle("show");
+        $("#" + wpjs.currentDrop).click(function() {
+          document.getElementById(wpjs.currentDrop + "Drop").classList.toggle("show");
         })
       },
     //
@@ -88,11 +87,11 @@ $(document).ready(function () {
     //   })
     // },
     //
-    // showInfo: function(){
-    //   $('#infoBtn').click(function(){
-    //     document.getElementById("info").classList.toggle("show");
-    //   })
-    // }
+    showInfo: function(){
+      $('#infoBtn').click(function(){
+        document.getElementById("info").classList.toggle("show");
+      })
+    }
 
       };
 
