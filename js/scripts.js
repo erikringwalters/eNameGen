@@ -13,8 +13,9 @@ $(document).ready(function () {
           $(".dropbtn").click(function(event){//sets current drop
             wpjs.currentDrop = this.id;
             //alert("currentDrop= " + wpjs.currentDrop)
-
-
+            $("#" + wpjs.currentDrop).click(function(event) {
+              document.getElementById(wpjs.currentDrop + "Drop").classList.toggle("show");
+            })
           })
 
         },
@@ -58,40 +59,40 @@ $(document).ready(function () {
         })
       },
       selectDrop: function(){
-        $("#" + wpjs.currentDrop).click(function() {
-          document.getElementById(wpjs.currentDrop + "Drop").classList.toggle("show");
+        $("#" + this.id).click(function() {
+          document.getElementById(this.id + "Drop").classList.toggle("show");
         })
       },
-
-      selectSize: function() {
-        $("#size").click(function() {
-          document.getElementById("sizeDrop").classList.toggle("show");
-        })
-      },
-
-      selectRace: function(){
-        $('#race').click(function() {
-        document.getElementById("raceDrop").classList.toggle("show");
-      })
-    },
-
-    selectGender: function(){
-      $('#gender').click(function() {
-        document.getElementById("genderDrop").classList.toggle("show");
-      })
-    },
-
-    selectFeedback: function(){
-      $('#feedback').click(function(){
-        document.getElementById("feedbackDrop").classList.toggle("show");
-      })
-    },
-
-    showInfo: function(){
-      $('#infoBtn').click(function(){
-        document.getElementById("info").classList.toggle("show");
-      })
-    }
+    //
+    //   selectSize: function() {
+    //     $("#size").click(function() {
+    //       document.getElementById("sizeDrop").classList.toggle("show");
+    //     })
+    //   },
+    //
+    //   selectRace: function(){
+    //     $('#race').click(function() {
+    //     document.getElementById("raceDrop").classList.toggle("show");
+    //   })
+    // },
+    //
+    // selectGender: function(){
+    //   $('#gender').click(function() {
+    //     document.getElementById("genderDrop").classList.toggle("show");
+    //   })
+    // },
+    //
+    // selectFeedback: function(){
+    //   $('#feedback').click(function(){
+    //     document.getElementById("feedbackDrop").classList.toggle("show");
+    //   })
+    // },
+    //
+    // showInfo: function(){
+    //   $('#infoBtn').click(function(){
+    //     document.getElementById("info").classList.toggle("show");
+    //   })
+    // }
 
       };
 
@@ -101,10 +102,10 @@ $(document).ready(function () {
         wpjs.selectMenu();
         wpjs.closeDropdowns();
         wpjs.selectDrop();
-        wpjs.selectSize();
-        wpjs.selectRace();
-        wpjs.selectGender();
-        wpjs.selectFeedback();
+        // wpjs.selectSize();
+        // wpjs.selectRace();
+        // wpjs.selectGender();
+        // wpjs.selectFeedback();
         wpjs.showInfo();
         //wpjs.setCurrentDrop();
     });
