@@ -2,14 +2,7 @@
 // import mids.js;
 // import ends.js;
 $(document).ready(function () {
-  var basics = new Array(
-  "Cor","Ara","Fon","Kar","Yu","Ton","Phu","Ro","Oli","Tre","Luo","Wua","Biu",
-  "Lau","Lo","Zun","Su","Fea","Bri","Eo","Elo","Pu","Rua","Kru","Pi","Viv","Vin",
-  "Blu","Chu","Ky","Whe","Qu","Que","Io","Ma","Mor","Obe","Ot","Wi","Za","Ki","Y",
-  "No","Ew","Bu","Ci","Cy","Cae","Sa","Xua","Ex","We","Ti","Tu","Be","Ne","Me",
-  "Pui","Quo","Mil","Un","Tru","Zo","De","Dur","Tur","Ar","Au","Ko","Ue","Re","E"
 
-)
     var wpjs = {
         model: null,
         currentDrop: null,
@@ -78,7 +71,7 @@ $(document).ready(function () {
 
       selectSize: function() {
         $("#sizeDrop").children.click(function() {
-          
+
         })
       },
     //
@@ -110,7 +103,7 @@ $(document).ready(function () {
       generateName: function(){
         $('#delta').click(function(){
           var name = "";
-          name += basics[0];
+          name += begs.basics[0];
           switch(size)
           {
             case "small":
