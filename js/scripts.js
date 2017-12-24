@@ -12,17 +12,25 @@ $(document).ready(function () {
         init: function () {
           $('#info').hide();
 
-          $(".dropbtn").click(function(event){//sets current drop
-            wpjs.currentDrop = this.id;
-            //alert("currentDrop= " + wpjs.currentDrop)
-            $("#" + this.id).click(function(event) {
-              document.getElementById(this.id + "Drop").classList.toggle("show");
-            })
-          })
+
 
         },
 
+        selectDrop: function() {
+        $(".dropbtn").click(function(event){
+          wpjs.currentDrop = this.id;
+          document.getElementById(this.id + "Drop").classList.add("show");
+          //sets current drop
+          // wpjs.currentDrop = this.id;
+          // alert("currentDrop= " + wpjs.currentDrop);
+          //
+          //
+          // $("#" + wpjs.currentDrop).click(function(event) {
+          //   document.getElementById(wpjs.currentDrop + "Drop").classList.add("show");
+          // })
 
+        });
+      },
 
         sampleFunc: function () {
         },
@@ -60,11 +68,7 @@ $(document).ready(function () {
           document.getElementById("nablaDrop").classList.toggle("show");
         })
       },
-      selectDrop: function(){
-        $("#" + wpjs.currentDrop).click(function() {
-          document.getElementById(wpjs.currentDrop + "Drop").classList.toggle("show");
-        })
-      },
+
     //
     //   selectSize: function() {
     //     $("#size").click(function() {
