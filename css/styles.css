@@ -76,6 +76,7 @@ button:hover, button:focus{
   /*position: relative;*/
   /*margin: inherit;*/
   float: left;
+  margin-right: 150px;
 }
 
 /* Links inside the dropdown */

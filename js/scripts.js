@@ -1,6 +1,6 @@
-import begs.js;
-import mids.js;
-import ends.js;
+// import begs.js;
+// import mids.js;
+// import ends.js;
 $(document).ready(function () {
 
     var wpjs = {
@@ -11,24 +11,13 @@ $(document).ready(function () {
 
         init: function () {
           $('#info').hide();
-
-
-
         },
 
         selectDrop: function() {
         $(".dropbtn").click(function(event){
+          $(".show.sub").removeClass('show');
           wpjs.currentDrop = this.id;
           document.getElementById(this.id + "Drop").classList.add("show");
-          //sets current drop
-          // wpjs.currentDrop = this.id;
-          // alert("currentDrop= " + wpjs.currentDrop);
-          //
-          //
-          // $("#" + wpjs.currentDrop).click(function(event) {
-          //   document.getElementById(wpjs.currentDrop + "Drop").classList.add("show");
-          // })
-
         });
       },
 
@@ -52,6 +41,14 @@ $(document).ready(function () {
           }
         })
       },
+
+      // closeSubDropdowns: function(){
+      //     if(event.target.matches('.dropbtn'))
+      //     {
+      //       $(".show.sub").removeClass('show');
+      //     }
+      //   },
+
 
       setParentDropDown: function()
       {
@@ -90,7 +87,7 @@ $(document).ready(function () {
     //
     // selectFeedback: function(){
     //   $('#feedback')
-    .click(function(){
+    //.click(function(){
     //     document.getElementById("feedbackDrop").classList.toggle("show");
     //   })
     // },
@@ -103,28 +100,29 @@ $(document).ready(function () {
 
       };
 
-      generateName: function() {
-        $('#delta').click(function() {
-          var name = "";
-          name += basics[Math.floor(Math.random()*(max-min) + min)]
-          document.getElementById("nameBox").html(name);
+      // generateName: function() {
+      //   $('#delta').click(function() {
+      //     var name = "";
+      //     name += basics[Math.floor(0, basics.size()/100) * 100];
+      //     document.getElementById("nameBox").html(name);
+      //
+      //   })
 
-        })
-
-      }
+      //}
 
     $(function () {
 
         wpjs.init();
         wpjs.selectMenu();
         wpjs.closeDropdowns();
+        //wpjs.closeSubDropdowns();
         wpjs.selectDrop();
         // wpjs.selectSize();
         // wpjs.selectRace();
         // wpjs.selectGender();
         // wpjs.selectFeedback();
         wpjs.showInfo();
-        //wpjs.setCurrentDrop();
+        // wpjs.generateName();
     });
 
 
