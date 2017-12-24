@@ -1,3 +1,6 @@
+import begs.js;
+import mids.js;
+import ends.js;
 $(document).ready(function () {
 
     var wpjs = {
@@ -12,8 +15,8 @@ $(document).ready(function () {
           $(".dropbtn").click(function(event){//sets current drop
             wpjs.currentDrop = this.id;
             //alert("currentDrop= " + wpjs.currentDrop)
-            $("#" + wpjs.currentDrop).click(function(event) {
-              document.getElementById(wpjs.currentDrop + "Drop").classList.toggle("show");
+            $("#" + this.id).click(function(event) {
+              document.getElementById(this.id + "Drop").classList.toggle("show");
             })
           })
 
@@ -94,6 +97,16 @@ $(document).ready(function () {
     }
 
       };
+
+      generateName: function() {
+        $('#delta').click(function() {
+          var name = "";
+          name += basics[Math.floor(Math.random()*(max-min) + min)]
+          document.getElementById("nameBox").html(name);
+
+        })
+
+      }
 
     $(function () {
 
