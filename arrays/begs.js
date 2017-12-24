@@ -1,4 +1,4 @@
-<script>
+
 var basics[
 "Cor","Ara","Fon","Kar","Yu","Ton","Phu","Ro","Oli","Tre","Luo","Wua","Biu",
 "Lau","Lo","Zun","Su","Fea","Bri","Eo","Elo","Pu","Rua","Kru","Pi","Viv","Vin",
@@ -6,4 +6,3 @@ var basics[
 "No","Ew","Bu","Ci","Cy","Cae","Sa","Xua","Ex","We","Ti","Tu","Be","Ne","Me",
 "Pui","Quo","Mil","Un","Tru","Zo","De","Dur","Tur","Ar","Au","Ko","Ue","Re","E"
 ]
- </script>
