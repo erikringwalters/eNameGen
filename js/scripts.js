@@ -2,7 +2,10 @@
 // import mids.js;
 // import ends.js;
 $(document).ready(function () {
-
+  function getRandNum(min, max)
+  {
+    return Math.floor(Math.random() * (max-min)+ min);
+  }
     var wpjs = {
         model: null,
         currentDrop: null,
@@ -10,10 +13,14 @@ $(document).ready(function () {
         race: null,
         size: "medium",
 
+
+
         init: function () {
           $('#info').hide();
 
         },
+
+
 
         selectDrop: function() {
         $(".dropbtn").click(function(event){
@@ -103,7 +110,7 @@ $(document).ready(function () {
       generateName: function(){
         $('#delta').click(function(){
           var name = "";
-          name += begs.basics[0];
+          name += begs.basics[getRandNum(0,begs.basics.length)];
           switch(size)
           {
             case "small":
@@ -114,6 +121,7 @@ $(document).ready(function () {
         })
       }
     }
+
 
     $(function () {
 
