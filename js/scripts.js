@@ -65,7 +65,7 @@ $(document).ready(function () {
           document.getElementById("nablaDrop").classList.toggle("show");
         })
       },
-    
+
     //
     //   selectSize: function() {
     //     $("#size").click(function() {
@@ -86,7 +86,8 @@ $(document).ready(function () {
     // },
     //
     // selectFeedback: function(){
-    //   $('#feedback').click(function(){
+    //   $('#feedback')
+    .click(function(){
     //     document.getElementById("feedbackDrop").classList.toggle("show");
     //   })
     // },
