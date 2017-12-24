@@ -13,6 +13,9 @@ $(document).ready(function () {
     var wpjs = {
         model: null,
         currentDrop: null,
+        gender: null,
+        race: null,
+        size: "medium",
 
         init: function () {
           $('#info').hide();
@@ -72,12 +75,12 @@ $(document).ready(function () {
         })
       },
 
-    //
-    //   selectSize: function() {
-    //     $("#size").click(function() {
-    //       document.getElementById("sizeDrop").classList.toggle("show");
-    //     })
-    //   },
+
+      selectSize: function() {
+        $("#sizeDrop").children.click(function() {
+          
+        })
+      },
     //
     //   selectRace: function(){
     //     $('#race').click(function() {
@@ -108,6 +111,12 @@ $(document).ready(function () {
         $('#delta').click(function(){
           var name = "";
           name += basics[0];
+          switch(size)
+          {
+            case "small":
+
+
+          }
           $("#nameBox").val(name);
         })
       }
@@ -118,7 +127,6 @@ $(document).ready(function () {
         wpjs.init();
         wpjs.selectMenu();
         wpjs.closeDropdowns();
-        //wpjs.closeSubDropdowns();
         wpjs.selectDrop();
         // wpjs.selectSize();
         // wpjs.selectRace();

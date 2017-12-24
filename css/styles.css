@@ -9,7 +9,8 @@ font-weight: lighter;
   color:antiquewhite;
 }
 h1{
-  margin:30px
+  margin-top:30px;
+  margin-right: 20px;
 }
 input{
   height: 30px;
