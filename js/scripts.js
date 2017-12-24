@@ -89,7 +89,8 @@ $(document).ready(function () {
     // },
     //
     // selectFeedback: function(){
-    //   $('#feedback').click(function(){
+    //   $('#feedback')
+    .click(function(){
     //     document.getElementById("feedbackDrop").classList.toggle("show");
     //   })
     // },
