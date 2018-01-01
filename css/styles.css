@@ -1,7 +1,22 @@
-/* MessagesComponent's private CSS styles */
-h2 {
-  color: red;
-  font-family: Arial, Helvetica, sans-serif;
+
+body{
+text-align: center;
+background-color: #302a29;
+font-family: arial;
+font-weight: lighter;
+}
+.main{
+  color:antiquewhite;
+}
+h1{
+  margin-top:30px;
+  margin-right: 20px;
+}
+input{
+  height: 30px;
+  width: 175px;
+  text-align: center;
+  font-size: 24px;
   font-weight: lighter;
 }
 body {
@@ -12,12 +27,52 @@ body, input[text], button {
   font-family: Cambria, Georgia;
 }
 
-button.clear {
-  font-family: Arial;
-  background-color: #eee;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    top: 25px;
+}
+
+.sub {
+  /*position: relative;*/
+  /*margin: inherit;*/
+  float: left;
+  margin-right: 150px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-weight: lighter;
+    text-decoration: none;
+    display: block;
+}
+.mod{
+  padding: 5px
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #cdc0b0}
+
+/* Show the dropdown menu (use JS to add this class to the
+.dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:inline-block;
+}
+
+.dropdown-submenu{
+  position: relative;
+
+}
+#delta, #nabla{
+  font-size: 24;
   cursor: pointer;
   cursor: hand;
 }

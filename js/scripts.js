@@ -1,34 +1,32 @@
-import begs.js;
-import mids.js;
-import ends.js;
+
+// import mids.js;
+// import ends.js;
 $(document).ready(function () {
-
+  function getRandNum(min, max)
+  {
+    return Math.floor(Math.random() * (max-min)+ min);
+  }
     var wpjs = {
-
         model: null,
         currentDrop: null,
+        gender: null,
+        race: null,
+        size: "medium",
+
 
 
         init: function () {
           $('#info').hide();
 
-
-
         },
+
+
 
         selectDrop: function() {
         $(".dropbtn").click(function(event){
+          $(".show.sub").removeClass('show');
           wpjs.currentDrop = this.id;
           document.getElementById(this.id + "Drop").classList.add("show");
-          //sets current drop
-          // wpjs.currentDrop = this.id;
-          // alert("currentDrop= " + wpjs.currentDrop);
-          //
-          //
-          // $("#" + wpjs.currentDrop).click(function(event) {
-          //   document.getElementById(wpjs.currentDrop + "Drop").classList.add("show");
-          // })
-
         });
       },
 
@@ -53,6 +51,14 @@ $(document).ready(function () {
         })
       },
 
+      // closeSubDropdowns: function(){
+      //     if(event.target.matches('.dropbtn'))
+      //     {
+      //       $(".show.sub").removeClass('show');
+      //     }
+      //   },
+
+
       setParentDropDown: function()
       {
 
@@ -69,12 +75,12 @@ $(document).ready(function () {
         })
       },
 
-    //
-    //   selectSize: function() {
-    //     $("#size").click(function() {
-    //       document.getElementById("sizeDrop").classList.toggle("show");
-    //     })
-    //   },
+
+      selectSize: function() {
+        $("#sizeDrop").children.click(function() {
+
+        })
+      },
     //
     //   selectRace: function(){
     //     $('#race').click(function() {
@@ -90,7 +96,7 @@ $(document).ready(function () {
     //
     // selectFeedback: function(){
     //   $('#feedback')
-    .click(function(){
+    //.click(function(){
     //     document.getElementById("feedbackDrop").classList.toggle("show");
     //   })
     // },
@@ -99,19 +105,23 @@ $(document).ready(function () {
       $('#infoBtn').click(function(){
         document.getElementById("info").classList.toggle("show");
       })
+    },
+
+      generateName: function(){
+        $('#delta').click(function(){
+          var name = "";
+          name += begs.basics[getRandNum(0,begs.basics.length)];
+          switch(size)
+          {
+            case "small":
+
+
+          }
+          $("#nameBox").val(name);
+        })
+      }
     }
 
-      };
-
-      generateName: function() {
-        $('#delta').click(function() {
-          var name = "";
-          name += basics[Math.floor(Math.random()*(max-min) + min)]
-          document.getElementById("nameBox").html(name);
-
-        })
-
-      }
 
     $(function () {
 
@@ -124,7 +134,8 @@ $(document).ready(function () {
         // wpjs.selectGender();
         // wpjs.selectFeedback();
         wpjs.showInfo();
-        //wpjs.setCurrentDrop();
+        wpjs.generateName();
+
     });
 
 
