@@ -24,13 +24,47 @@ input{
   text-align: center;
   font-size: 24px;
   font-weight: lighter;
+  outline: none;
+  border: none;
+  background-color: #faebd7;
 }
-body {
-  margin: 2em;
+a, a:visited{
+  color: black;
 }
-body, input[text], button {
-  color: crimson;
-  font-family: Cambria, Georgia;
+footer{
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
+  margin: 20;
+  color: black;
+  opacity: 0.5;
+}
+button{
+  /*background-color: black;*/
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+button:hover, button:focus{
+  outline: none;
+}
+/* Dropdown Button (pulled from W3Schools)*/
+.dropbtn {
+    border: none;
+    cursor: pointer;
+
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    /*background-color: #3e8e41;*/
+    outline: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -81,17 +115,19 @@ body, input[text], button {
 #delta, #nabla{
   font-size: 24;
   cursor: pointer;
-  cursor: hand;
 }
-button:hover {
-  background-color: #cfd8dc;
+#size{
+  right: 0;
 }
-button:disabled {
-  background-color: #eee;
-  color: #aaa;
-  cursor: auto;
+#small{
+  font-size: 10px;
 }
-button.clear {
-  color: #888;
-  margin-bottom: 12px;
+#medium{
+  font-size: 20px;
+}
+#large{
+  font-size: 30px;
+}
+#infoBtn{
+  cursor: pointer;
 }
