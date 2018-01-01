@@ -1,5 +1,4 @@
-<script>
-var basics[
+var ends={
+basics: [
 
 ]
- </script>

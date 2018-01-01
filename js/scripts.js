@@ -111,12 +111,7 @@ $(document).ready(function () {
         $('#delta').click(function(){
           var name = "";
           name += begs.basics[getRandNum(0,begs.basics.length)];
-          switch(size)
-          {
-            case "small":
-
-
-          }
+        name += mids.basics[getRandNum(0, mids.basics.length)];
           $("#nameBox").val(name);
         })
       }
