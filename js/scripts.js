@@ -28,12 +28,17 @@ $(document).ready(function () {
           // wpjs.selectFeedback();
           wpjs.showInfo();
           wpjs.generateName();
+          //wpjs.pieceNameTogether();
         },
+
+
 
         getRandNum: function(min, max)
         {
           return Math.floor(Math.random() * (max-min)+ min);
         },
+
+
 
         selectDrop: function() {
         $(".dropbtn").click(function(event){
@@ -127,32 +132,68 @@ $(document).ready(function () {
       generateName: function(){
         $('#delta').click(function(){
           var name = "";
-          switch(wpjs.race){
-          case "human":
-            name += begs.basics[wpjs.getRandNum(0,begs.basics.length)];
-            if(wpjs.size === "small")
-            {
-              name += shortEnds.basics[wpjs.getRandNum(0,shortEnds.basics.length)];
-            }
-            if(wpjs.size === "medium" || wpjs.size === "large")
-            {
-            name += mids.basics[wpjs.getRandNum(0, mids.basics.length)];
-            }
-            if(wpjs.size === "large")
-            {
-            name += ends.basics[wpjs.getRandNum(0, ends.basics.length)];
-            }
-            break;
-
-          case "orc":
-            name += begs.orc[wpjs.getRandNum(0, begs.orc.length)];
-            break;
-
-          }
+          // switch(wpjs.race){
+          // case "human":
+          //   name += begs.basics[wpjs.getRandNum(0,begs.basics.length)];
+          //   if(wpjs.size === "small")
+          //   {
+          //     name += shortEnds.basics[wpjs.getRandNum(0,shortEnds.basics.length)];
+          //   }
+          //   if(wpjs.size === "medium" || wpjs.size === "large")
+          //   {
+          //   name += mids.basics[wpjs.getRandNum(0, mids.basics.length)];
+          //   }
+          //   if(wpjs.size === "large")
+          //   {
+          //   name += ends.basics[wpjs.getRandNum(0, ends.basics.length)];
+          //   }
+          //   break;
+          //
+          // case "orc":
+          //   name += begs.orc[wpjs.getRandNum(0, begs.orc.length)];
+          //   break;
+          //
+          // }
+          name = wpjs.pieceNameTogether(wpjs.size, wpjs.race);
 
           $("#nameBox").val(name);
         })
-      }
+      },
+
+
+              pieceNameTogether: function(s, r){//s for size and r for race
+                var name = "";
+                var a, b, c, d;
+                a = eval("begs." + r + "[wpjs.getRandNum(0, begs." + r +".length)]");
+                name += a;
+                  switch(s){
+
+                case "small":
+                {
+                  b = eval("shortEnds." + r + "[wpjs.getRandNum(0, shortEnds." + r +".length)]");
+                  name += b;
+                  break;
+                }
+                case "medium":
+                {
+                  c = eval("mids." + r + "[wpjs.getRandNum(0, mids." + r +".length)]");
+                  name += c;
+                  break;
+                }
+                case "large":
+                {
+                  c = eval("mids." + r + "[wpjs.getRandNum(0, mids." + r +".length)]");
+                  name += c;
+                  d = eval("ends." + r + "[wpjs.getRandNum(0, ends." + r +".length)]");
+                  name += d;
+
+                  break;
+                }
+
+              }
+              return name;
+            }
+
     };
 
 

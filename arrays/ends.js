@@ -1,5 +1,5 @@
 var ends={
-basics: [
+basic: [
   "ou", "abe", "i", "mub", "och", "ode", "cer", "mor", "phine", "er", "ik", "po", "oke", "il", "ine", "co",
   "ver", "ame", "ien", "eck", "art", "tor", "um", "brum", "ello", "ith", "our", "outh", "ruff", "pur", "ette", "truk",
   "wor", "ord", "wim", "bur", "pul", "ry", "lub", "dine", "ters", "ey", "un", "ex", "ta", "cy", "mar", "io",
