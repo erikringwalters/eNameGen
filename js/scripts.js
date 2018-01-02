@@ -2,25 +2,38 @@
 // import mids.js;
 // import ends.js;
 $(document).ready(function () {
-  function getRandNum(min, max)
-  {
-    return Math.floor(Math.random() * (max-min)+ min);
-  }
+
+
     var wpjs = {
         model: null,
         currentDrop: null,
         gender: null,
         race: null,
-        size: "medium",
+        size: null,
 
 
 
         init: function () {
           $('#info').hide();
-
+          gender = "any";
+          race = "basic";
+          size = "medium";
+        //  wpjs.getRandNum();
+          wpjs.selectMenu();
+          wpjs.closeDropdowns();
+          wpjs.selectDrop();
+          wpjs.selectSize();
+          // wpjs.selectRace();
+          // wpjs.selectGender();
+          // wpjs.selectFeedback();
+          wpjs.showInfo();
+          wpjs.generateName();
         },
 
-
+        getRandNum: function(min, max)
+        {
+          return Math.floor(Math.random() * (max-min)+ min);
+        },
 
         selectDrop: function() {
         $(".dropbtn").click(function(event){
@@ -77,8 +90,10 @@ $(document).ready(function () {
 
 
       selectSize: function() {
-        $("#sizeDrop").children.click(function() {
-
+        $(".sizeSub").click(function() {
+          event.preventDefault();//this is here otherwise the href would take over
+           //alert(jQuery(this).attr("id"));
+          wpjs.size = jQuery(this).attr("id");
         })
       },
     //
@@ -110,26 +125,29 @@ $(document).ready(function () {
       generateName: function(){
         $('#delta').click(function(){
           var name = "";
-          name += begs.basics[getRandNum(0,begs.basics.length)];
-        name += mids.basics[getRandNum(0, mids.basics.length)];
+          name += begs.basics[wpjs.getRandNum(0,begs.basics.length)];
+          if(wpjs.size === "small")
+          {
+            name += shortEnds.basics[wpjs.getRandNum(0,shortEnds.basics.length)];
+          }
+          if(wpjs.size === "medium" || wpjs.size === "large")
+          {
+          name += mids.basics[wpjs.getRandNum(0, mids.basics.length)];
+          }
+          if(wpjs.size === "large")
+          {
+          name += ends.basics[wpjs.getRandNum(0, ends.basics.length)];
+          }
           $("#nameBox").val(name);
         })
       }
-    }
+    };
 
 
     $(function () {
 
         wpjs.init();
-        wpjs.selectMenu();
-        wpjs.closeDropdowns();
-        wpjs.selectDrop();
-        // wpjs.selectSize();
-        // wpjs.selectRace();
-        // wpjs.selectGender();
-        // wpjs.selectFeedback();
-        wpjs.showInfo();
-        wpjs.generateName();
+
 
     });
 

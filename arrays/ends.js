@@ -9,3 +9,4 @@ basics: [
   "kar", "gor", "rill", "a", "blu", "plet", "cro", "fle", "bab", "chur", "ake", "nada", "ensa", "ight", "aze", "ive",
   "me", "it", "amus", "flur", "dil", "omie", "let", "ave", "aye", "idle", "ow", "no", "ye", "me", "u", "one"
 ]
+}
