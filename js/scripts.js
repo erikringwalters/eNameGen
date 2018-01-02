@@ -15,15 +15,15 @@ $(document).ready(function () {
 
         init: function () {
           $('#info').hide();
-          gender = "any";
-          race = "basic";
-          size = "medium";
+          wpjs.gender = "any";
+          wpjs.race = "basic";
+          wpjs.size = "medium";
         //  wpjs.getRandNum();
           wpjs.selectMenu();
           wpjs.closeDropdowns();
           wpjs.selectDrop();
           wpjs.selectSize();
-          // wpjs.selectRace();
+          wpjs.selectRace();
           // wpjs.selectGender();
           // wpjs.selectFeedback();
           wpjs.showInfo();
@@ -97,11 +97,13 @@ $(document).ready(function () {
         })
       },
     //
-    //   selectRace: function(){
-    //     $('#race').click(function() {
-    //     document.getElementById("raceDrop").classList.toggle("show");
-    //   })
-    // },
+      selectRace: function(){
+        $(".raceSub").click(function() {
+          event.preventDefault();//this is here otherwise the href would take over
+           //alert(jQuery(this).attr("id"));
+          wpjs.race = jQuery(this).attr("id");
+      })
+    },
     //
     // selectGender: function(){
     //   $('#gender').click(function() {
@@ -125,19 +127,29 @@ $(document).ready(function () {
       generateName: function(){
         $('#delta').click(function(){
           var name = "";
-          name += begs.basics[wpjs.getRandNum(0,begs.basics.length)];
-          if(wpjs.size === "small")
-          {
-            name += shortEnds.basics[wpjs.getRandNum(0,shortEnds.basics.length)];
+          switch(wpjs.race){
+          case "human":
+            name += begs.basics[wpjs.getRandNum(0,begs.basics.length)];
+            if(wpjs.size === "small")
+            {
+              name += shortEnds.basics[wpjs.getRandNum(0,shortEnds.basics.length)];
+            }
+            if(wpjs.size === "medium" || wpjs.size === "large")
+            {
+            name += mids.basics[wpjs.getRandNum(0, mids.basics.length)];
+            }
+            if(wpjs.size === "large")
+            {
+            name += ends.basics[wpjs.getRandNum(0, ends.basics.length)];
+            }
+            break;
+
+          case "orc":
+            name += begs.orc[wpjs.getRandNum(0, begs.orc.length)];
+            break;
+
           }
-          if(wpjs.size === "medium" || wpjs.size === "large")
-          {
-          name += mids.basics[wpjs.getRandNum(0, mids.basics.length)];
-          }
-          if(wpjs.size === "large")
-          {
-          name += ends.basics[wpjs.getRandNum(0, ends.basics.length)];
-          }
+
           $("#nameBox").val(name);
         })
       }
