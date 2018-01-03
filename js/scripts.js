@@ -23,7 +23,7 @@ $(document).ready(function() {
         wpjs.selectDrop();
         wpjs.selectSize();
         wpjs.selectRace();
-        // wpjs.selectGender();
+        wpjs.selectGender();
         // wpjs.selectFeedback();
         wpjs.showInfo();
         wpjs.generateName();
@@ -107,6 +107,7 @@ $(document).ready(function() {
 
       showInfo: function() {
         $('#infoBtn').click(function() {
+          event.preventDefault(); //this is here otherwise the href would take over
           document.getElementById("info").classList.toggle("show");
         })
       },
