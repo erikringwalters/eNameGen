@@ -139,7 +139,15 @@ $(document).ready(function() {
             }
           case "medium":
             {//TODO: if(coinflip())
-              c = eval("mids." + r + "[wpjs.getRandNum(0, mids." + r + ".length)]");
+              if(wpjs.coinFlip())
+              c = eval("mids." + r + "[wpjs.getRandNum(0, mids." + r + ".length)]");//50% chance it pulls from mids
+              else {
+                c = eval("ends." + r + "[wpjs.getRandNum(0, ends." + r + ".length)]");//50% chance it pulls from ends (dependent)
+                }
+                if(wpjs.coinFlip())
+                {
+                  c += eval("shortEnds." + r + "[wpjs.getRandNum(0, shortEnds." + r + ".length)]")//50% chance it pulls from ends (independent)
+                }
               name += c;
               break;
             }
