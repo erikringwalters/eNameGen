@@ -138,7 +138,7 @@ $(document).ready(function() {
               break;
             }
           case "medium":
-            {
+            {//TODO: if(coinflip())
               c = eval("mids." + r + "[wpjs.getRandNum(0, mids." + r + ".length)]");
               name += c;
               break;

@@ -8,5 +8,13 @@ basic: [
   "eign", "zol", "oel", "mor", "frub", "row", "ink", "dae", "ub", "lo", "om", "lip", "chren", "pho", "blur", "crul",
   "kar", "gor", "rill", "a", "blu", "plet", "cro", "fle", "bab", "chur", "ake", "nada", "ensa", "ight", "aze", "ive",
   "me", "it", "amus", "flur", "dil", "omie", "let", "ave", "aye", "idle", "ow", "no", "ye", "me", "u", "one"
+],
+
+orc: [
+  "uch", "ub", "lub", "nub", "ub", "ob", "u", "op", "mo", "om", "el", "ov", "os", "al", "wu", "ej", "je", "jer",
+  "kom", "go", "aub", "or", "ah", "ag", "ig", "lug", "bug", "fug", "mug", "ush", "ij", "un", "cu", "pok", "ure", "um",
+  "for", "ork", "bul", "owl", "nul", "hul", "chul", "cho", "oh", "fo", "ukle", "meb", "tul", "olk", "wul", "se", "il", "uke",
+  "bel", "elt", "ult", "ulk", "bil", "cul", "orl", "dol", "crol", "ual", "nol", "mol", "khul", "old", "er", "or", "it", "up",
+  "uj", "ej", "kuj", "kej", "kug", "keg", "ech", "oz", "wop", "al", "mul", "tic", "ur", "ob", "ab", "ba", "chu", "mu"
 ]
 }
