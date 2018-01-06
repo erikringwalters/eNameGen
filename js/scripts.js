@@ -9,7 +9,9 @@ $(document).ready(function() {
       gender: null,
       race: null,
       size: null,
-
+      currentName: null,
+      namePointer: null,
+      generated: null,
 
 
       init: function() {
@@ -17,7 +19,10 @@ $(document).ready(function() {
         wpjs.gender = "any";
         wpjs.race = "basic";
         wpjs.size = "medium";
-        //  wpjs.getRandNum();
+        wpjs.names = [];
+        wpjs.namePointer = 0;
+        wpjs.generated = false;
+
         wpjs.selectMenu();
         wpjs.closeDropdowns();
         wpjs.selectDrop();
@@ -27,7 +32,8 @@ $(document).ready(function() {
         // wpjs.selectFeedback();
         wpjs.showInfo();
         wpjs.generateName();
-        //wpjs.pieceNameTogether();
+        wpjs.nextName();
+        wpjs.prevName();
       },
 
 
@@ -118,7 +124,13 @@ $(document).ready(function() {
 
           name = wpjs.pieceNameTogether(wpjs.size, wpjs.race);
 
-          $("#nameBox").val(name);
+          if(wpjs.names.length >= 100)
+          {
+            wpjs.names.shift();
+          }
+          wpjs.names.push(name);//stuff this into array
+          wpjs.namePointer = wpjs.names.length - 1;//reassign array element displayed to this.
+          $("#nameBox").val(name);//put name into input box
         })
       },
 
@@ -163,6 +175,35 @@ $(document).ready(function() {
 
         }
         return name;
+      },
+
+      nextName: function() {
+        $('#next').click(function() {
+
+          if(wpjs.namePointer >= wpjs.names.length)
+          {
+            return;
+          }
+          else{
+            wpjs.namePointer++;
+            $("#nameBox").val(wpjs.names[wpjs.namePointer]);//put name into input box
+
+          }
+        })
+      },
+
+      prevName: function() {
+        $('#prev').click(function(){
+
+          if(wpjs.namePointer > 0)
+          {
+            wpjs.namePointer--;
+            $("#nameBox").val(wpjs.names[wpjs.namePointer]);//put name into input box
+          }
+          else{
+            return;
+          }
+        })
       },
 
       coinFlip: function() {
