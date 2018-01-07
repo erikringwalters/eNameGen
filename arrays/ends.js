@@ -16,5 +16,8 @@ orc: [
   "for", "ork", "bul", "owl", "nul", "hul", "chul", "cho", "oh", "fo", "ukle", "meb", "tul", "olk", "wul", "se", "il", "uke",
   "bel", "elt", "ult", "ulk", "bil", "cul", "orl", "dol", "crol", "ual", "nol", "mol", "khul", "old", "er", "or", "it", "up",
   "uj", "ej", "kuj", "kej", "kug", "keg", "ech", "oz", "wop", "al", "mul", "tic", "ur", "ob", "ab", "ba", "chu", "mu"
+],
+elf: [
+  "",
 ]
 }

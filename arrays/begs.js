@@ -12,5 +12,12 @@ var begs = {
     "Of", "Bofo", "Dru", "Grul", "Blu", "Urs", "Kru", "Fur", "Fee", "Fi", "Fo", "Fum", "Tru", "Po", "Zurl",
     "Zur", "Bo", "Plu", "Qu", "Ze", "Buf", "Zol", "Krug", "Bol", "Chol", "Kol", "Zor", "Zerg", "Emp", "Er",
     "Or", "Arl", "Cer", "Eal", "E", "Ok", "Om", "Mo", "No", "Ro", "Lo", "Be", "Gun", "Grug", "U"
+  ],
+  elf: [
+    "Au", "Ue", "Ar", "Ith", "Ou", "Mar", "Cue", "Cet", "Ce", "Phi", "Il", "Wa", "Ya", "Ru", "Rua", "Em", "El",
+    "Ma", "Uth", "Eo", "Un", "We", "Lu", "Lua", "Mun", "Cre", "O", "Que", "Um", "Zy", "Zau", "Ze", "Che", "Mi",
+    "Ya", "Yu", "Ve", "Va", "Pul", "Ye", "Ne", "Na", "Ne", "Op", "Ax", "Axe", "Ina", "Yo", "Yu", "Ox", "En",
+    "Bi", "Be", "Ba", "Ri", "Ru", "Ra", "Da", "Du", "De", "Dui", "Ca", "Cae", "Ul", "Me", "Mua", "Ge", "Hi",
+    "U", "Ku", "Ka", "Ke", "Ki", "Mel", "Chu", "Eu", "Lo", "La", "Le", "Li", "Luk", "Ta", "Te", "Ti", "To"
   ]
 }

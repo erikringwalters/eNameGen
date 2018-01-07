@@ -11,5 +11,8 @@ orc: [
   "tug", "op", "po", "mul", "nul", "rol", "col", "tol", "ol", "fol", "vo", "of", "wo", "zo", "oz", "al", "ut",
   "mut", "ux", "gro", "chol", "boo", "coo", "tu", "mup", "rud", "pum", "fum", "wub", "chub", "chum", "luk", "lok", "il",
   "mol", "nol", "jol", "uj", "ek", "wum", "gub", "vol", "pol", "wol", "u", "o", "ex", "quo", "bo", "glo", "to"
+],
+elf: [
+  "",
 ]
 };
