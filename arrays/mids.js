@@ -13,6 +13,9 @@ orc: [
   "mol", "nol", "jol", "uj", "ek", "wum", "gub", "vol", "pol", "wol", "u", "o", "ex", "quo", "bo", "glo", "to"
 ],
 elf: [
-  "",
+   "wel", "luk", "umb", "ich", "ar", "tche", "tel", "til", "mak", "kil", "mir", "lu", "hin", "ing", "ol", "mo", "ron", "nel",
+   "ere", "sto", "ean", "arf", "ind", "ing", "agu", "in", "ala", "thil", "o", "go", "al", "la", "im", "do", "ald", "wi",
+   "las", "ego", "dir", "di", "lun", "iri", "ell", "ro", "oph", "phe", "og", "um", "ae", "aer", "ero", "at", "urg", "ur",
+   "uo", "alg", "tie", "ra", "on", "ah", "ta", "ag", "ed", "r", "we", "wi", "min", "dri", "ril", "kil", "kal", "a"
 ]
 };
