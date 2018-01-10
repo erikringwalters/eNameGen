@@ -12,8 +12,12 @@ orc: [
 elf: [
   "or", "in", "le", "pe", "rke", "je", "ol", "e", "ze", "yke", "ef", "qu", "as", "al", "ic", "yro", "yn", "er",
   "yr", "il", "es", "ur", "ue", "io", "eo", "ele", "eth", "ath", "eck", "zu", "ez", "az", "emp", "ed", "ich", "te",
-  "it", "las", "on", "uil", "and", "elm", "ep", "wen", "ar", "es", "un", "we", "ew", "bor", "im", "ian", "fin", "ron",
-
+  "it", "las", "on", "uil", "and", "elm", "ep", "wen", "ar", "es", "un", "we", "ew", "bor", "im", "ian", "fin", "ron"
+],
+human: [
+  "ven", "ben", "ime", "bir", "ul", "el", "ek", "ik", "som", "ean", "ric", "ik", "ke", "it", "om", "on", "ic", "kil", "tuc", "ok",
+  "ich", "ick", "ush", "kes", "tih", "con", "vic", "ice", "li", "el", "cru", "ise", "ey", "ay", "lin", "ley", "net", "rad", "fra", "dit",
+  "kir", "lor", "hac", "ech", "chil", "jil", "mel", "ock", "mil", "ox", "ail", "as", "ard", "oin", "yt", "te", "y", "chy", "ely", "muk"
 ]
 
 };

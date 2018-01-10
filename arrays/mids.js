@@ -17,5 +17,11 @@ elf: [
    "ere", "sto", "ean", "arf", "ind", "ing", "agu", "in", "ala", "thil", "o", "go", "al", "la", "im", "do", "ald", "wi",
    "las", "ego", "dir", "di", "lun", "iri", "ell", "ro", "oph", "phe", "og", "um", "ae", "aer", "ero", "at", "urg", "ur",
    "uo", "alg", "tie", "ra", "on", "ah", "ta", "ag", "ed", "r", "we", "wi", "min", "dri", "ril", "kil", "kal", "a"
+],
+human: [
+  "et", "mut", "ik", "il", "el", "ge", "gel", "mud", "ok", "cul", "que", "ze", "ken", "ich", "fel", "fio", "fil", "chen", "pou",
+  "min", "as", "la", "cas", "gas", "com", "up", "ya", "tor", "em", "vee", "see", "kin", "sho", "shi", "chus", "bra", "bur", "ope",
+  "acu", "aci", "dor", "del", "pro", "duc", "cer", "zun", "zum", "zam", "sim", "chem", "dil", "ign", "twi", "sted", "do", "pe", "le",
+  "an", "and", "the", "fan", "ta", "cre", "dit", "card", "san", "des", "cam", "mer", "sike", "des", "ine", "er", "bit", "get", "it"
 ]
 };

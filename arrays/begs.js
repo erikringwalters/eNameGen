@@ -19,5 +19,12 @@ var begs = {
     "Ya", "Yu", "Ve", "Va", "Pul", "Ye", "Ne", "Na", "Ne", "Op", "Ax", "Axe", "Ina", "Yo", "Yu", "Ox", "En",
     "Bi", "Be", "Ba", "Ri", "Ru", "Ra", "Da", "Du", "De", "Dui", "Ca", "Cae", "Ul", "Me", "Mua", "Ge", "Hi",
     "U", "Ku", "Ka", "Ke", "Ki", "Mel", "Chu", "Eu", "Lo", "La", "Le", "Li", "Luk", "Ta", "Te", "Ti", "To"
+  ],
+  human: [
+    "Ran", "Fao", "Ru", "Ul", "Fen", "Ade", "Mor", "Dom", "Dam", "Wil", "Mor", "Rin", "Tra", "Fel", "Cor", "Vin", "Mul", "Lew",
+    "Fer", "Deg", "Dun", "Ste", "Vin", "Lew", "Gar", "Vor", "Phi", "Run", "Rel", "Gar", "Voa", "Eli", "Fra", "Men", "Bot", "Cie", "Ro",
+    "Dab", "Jea", "Nen", "Pie", "Bel", "Bot", "Van", "Yel", "Syb", "Eda", "Fre", "Bie", "Ca", "Cal", "Lae", "Cha", "Ber", "Mic", "Mar",
+    "Mau", "Eol", "Elo", "Hul", "Ase", "Ace", "Mil", "Cla", "Gur", "Cie", "Dar", "Ime", "Cos", "Od", "Ver", "One", "Bir", "Ryl", "Ken",
+    "Kar", "Kul", "Kun", "Kil", "Myn", "Eck", "Tuc", "Kle", "Tul", "Asi", "Tho", "Thu", "The", "Meb", "Gel", "Gal", "Der", "Dul", "Und", "Er"
   ]
 }

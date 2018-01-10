@@ -23,5 +23,12 @@ elf: [
   "ire", "amme", "enwe", "elu", "nel", "itch", "ye", "ene", "dhil", "eol", "stor", "anor", "ilas", "le", "ak", "op", "iss", "und",
   "ur", "ae", "ce", "ie", "ile", "wi", "qu", "psy", "yel", "hyr", "aro", "am", "an", "en", "bo", "eb", "ze", "ew",
   "ig", "ige", "es", "ese", "ex", "me", "ike", "e", "ero", "yn", "sau", "esh", "ash", "ish", "rom", "mon", "cye", "cae"
+],
+human: [
+  "pan", "da", "hai", "res", "deol", "dol", "del", "ta", "tim", "my", "tur", "ner", "ya", "fur", "nan", "el", "ine", "ne", "bur",
+  "ger", "gus", "lus", "ius", "on", "or", "and", "tian", "lav", "ox", "us", "tus", "uc", "i", "vu", "u", "nus", "ol", "tan",
+  "nis", "on", "orn", "dut", "dur", "von", "tel", "wat", "ron", "ren", "dez", "vous", "ris", "spri", "red", "ard", "ur", "url", "arl",
+  "mer", "hug", "rul", "us", "if", "y", "ou", "are", "rea", "din", "g", "thi", "s", "i", "hav", "e", "per", "ish", "ed", "l",
+  "ol", "pub", "eg", "ug", "esh", "ech", "ush", "esh", "nil", "kog", "tud", "tun", "ish", "ush", "kre", "ol", "bay", "reb", "ro"
 ]
 }
