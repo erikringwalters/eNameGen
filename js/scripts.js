@@ -121,7 +121,11 @@ $(document).ready(function() {
       generateName: function() {
         $('#delta').click(function() {
           var name = "";
-
+          if(wpjs.race === "experimental")
+          {
+            name = wpjs.constructExperimentalName(wpjs.size);
+          }
+          else
           name = wpjs.pieceNameTogether(wpjs.size, wpjs.race);
 
           if(wpjs.names.length >= 100)
@@ -175,6 +179,10 @@ $(document).ready(function() {
 
         }
         return name;
+      },
+
+      constructExperimentalName: function(s) {
+        return "w";
       },
 
       nextName: function() {
