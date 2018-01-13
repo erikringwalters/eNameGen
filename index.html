@@ -2,7 +2,7 @@
 <head>
 <title>eNameGen</title>
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<script src="js/jquery-3.2.1.js" type="text/JavaScript"></script>
+<script src="Scripts/jquery-3.2.1.js" type="text/JavaScript"></script>
 <script src="arrays/begs.js"></script>
 <script src="arrays/shortEnds.js"></script>
 <script src="arrays/mids.js"></script>
@@ -10,31 +10,42 @@
 
 <!-- <script src="0.js"></script> -->
 <!-- <script type="text/JavaScript" src="js/queue.js"></script> -->
-<script type="text/JavaScript" src="js/scripts.js"/>
+<script type="text/JavaScript" src="Scripts/scripts.js"/>
 
 
 </script>
-<link href="./css/styles.css" rel="stylesheet" type="text/css" />
+<link href="Content/Site.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="icons/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="shortcut icon" href="img/triangle.png" type="image/x-icon">
+<link rel="shortcut icon" href="Content/Images/triangle.png" type="image/x-icon">
 </head>
 <body>
 <h1 class="main">eNameGen</h1>
 <div>
-
+<div class="row">
   <button id='prev' class= 'prev mod main'>
   <
   </button>
-<button id='delta' class='delta mod main'>
-Δ
-</button>
+
   <input id='nameBox' type="text" />
 
 <div class="dropdown">
-  <button id="nabla"  class="dropbtn mod main">∇</button>
   <button id='next' class= 'next mod main'>
   >
   </button>
+  </div>
+  <div class="row">
+    <span class="icon">
+    <button id="nabla"  class="dropbtn mod main">∇</button>
+</span>
+<span class="icon" id="sizeIcon">1</span>
+<span class="icon" id="raceIcon">2</span>
+<span class="icon" id="genderIcon">3</span>
+<span class="icon">
+    <button id='delta' class='delta mod main'>
+    Δ
+    </button>
+</span>
+  </div>
   <div id="nablaDrop" class="dropdown-content">
 
     <a id="size" class="dropbtn mod main">Size</a>
