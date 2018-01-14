@@ -126,7 +126,7 @@ $(document).ready(function() {
             name = wpjs.constructExperimentalName(wpjs.size);
           }
           else
-          name = wpjs.pieceNameTogether(wpjs.size, wpjs.race);
+          name = wpjs.pieceNameTogether(wpjs.size, wpjs.race, wpjs.gender);
 
           if(wpjs.names.length >= 100)
           {
@@ -140,7 +140,7 @@ $(document).ready(function() {
 
 
 
-      pieceNameTogether: function(s, r) { //s for size and r for race
+      pieceNameTogether: function(s, r, g) { //s for size and r for race
         var name = "";
         var a, b, c, d;
         a = eval("begs." + r + "[wpjs.getRandNum(0, begs." + r + ".length)]"); //using eval statements to clearly define 'r'
@@ -177,6 +177,26 @@ $(document).ready(function() {
               break;
             }
 
+            if(g === "male")
+            {
+              if(coinflip())
+              {
+                if(name[name.length - 1] == 'o')//las letter is not o
+                {
+                  name[name.length - 1] = 'o';
+                }
+              }
+            }
+            if(g === "female")
+            {
+              if(coinflip())
+              {
+                if(name[name.length - 1] == 'a')//las letter is not o
+                {
+                  name[name.length - 1] = 'a';
+                }
+              }
+            }
         }
         return name;
       },
