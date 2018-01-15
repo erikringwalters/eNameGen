@@ -34,6 +34,8 @@ $(document).ready(function() {
         wpjs.generateName();
         wpjs.nextName();
         wpjs.prevName();
+        wpjs.like();
+        wpjs.dislike();
       },
 
 
@@ -110,6 +112,19 @@ $(document).ready(function() {
       //     wpjs.feedback = jQuery(this).attr("id");
       //   })
       // },
+      like : function() {
+        $("#like").click(function() {
+          event.preventDefault();
+          con.likeName();
+        })
+      },
+
+      dislike : function() {
+        $("#like").click(function() {
+          event.preventDefault();
+          con.dislikeName();
+        })
+      },
 
       showInfo: function() {
         $('#infoBtn').click(function() {
