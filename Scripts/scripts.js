@@ -1,5 +1,6 @@
 // import mids.js;
 // import ends.js;
+//test
 $(document).ready(function() {
 
 
@@ -30,10 +31,14 @@ $(document).ready(function() {
         wpjs.selectRace();
         wpjs.selectGender();
         // wpjs.selectFeedback();
+
         wpjs.showInfo();
         wpjs.generateName();
         wpjs.nextName();
         wpjs.prevName();
+        wpjs.like();
+        wpjs.dislike();
+        wpjs.coinFlip();
       },
 
 
@@ -110,6 +115,19 @@ $(document).ready(function() {
       //     wpjs.feedback = jQuery(this).attr("id");
       //   })
       // },
+      like : function() {
+        $("#like").click(function() {
+          event.preventDefault();
+          con.likeName();
+        })
+      },
+
+      dislike : function() {
+        $("#like").click(function() {
+          event.preventDefault();
+          con.dislikeName();
+        })
+      },
 
       showInfo: function() {
         $('#infoBtn').click(function() {
@@ -126,7 +144,7 @@ $(document).ready(function() {
             name = wpjs.constructExperimentalName(wpjs.size);
           }
           else
-          name = wpjs.pieceNameTogether(wpjs.size, wpjs.race);
+          name = wpjs.pieceNameTogether(wpjs.size, wpjs.race, wpjs.gender);
 
           if(wpjs.names.length >= 100)
           {
@@ -140,7 +158,7 @@ $(document).ready(function() {
 
 
 
-      pieceNameTogether: function(s, r) { //s for size and r for race
+      pieceNameTogether: function(s, r, g) { //s for size and r for race
         var name = "";
         var a, b, c, d;
         a = eval("begs." + r + "[wpjs.getRandNum(0, begs." + r + ".length)]"); //using eval statements to clearly define 'r'
@@ -176,6 +194,27 @@ $(document).ready(function() {
 
               break;
             }
+          }
+
+            if(wpjs.gender === "male")
+            {
+              if(wpjs.coinFlip())
+              {
+                if(name[name.length - 2] != 'o')//last letter is not o
+                {
+                  name += 'o';
+                }
+              }
+            }
+            else if(wpjs.gender === "female")
+            {
+              if(wpjs.coinFlip())
+              {
+                if(name[name.length - 2] != 'a')//last letter is not o
+                {
+                  name += 'a';
+                }
+              }
 
         }
         return name;

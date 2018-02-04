@@ -1,5 +1,6 @@
 // import mids.js;
 // import ends.js;
+//test
 $(document).ready(function() {
 
 
@@ -192,21 +193,21 @@ $(document).ready(function() {
               break;
             }
 
-            if(g === "male")
+            if(wpjs.gender === "male")
             {
               if(coinflip())
               {
-                if(name[name.length - 1] == 'o')//las letter is not o
+                if(name[name.length - 1] == 'o')//last letter is not o
                 {
                   name[name.length - 1] = 'o';
                 }
               }
             }
-            if(g === "female")
+            else if(wpjs.gender === "female")
             {
               if(coinflip())
               {
-                if(name[name.length - 1] == 'a')//las letter is not o
+                if(name[name.length - 1] == 'a')//last letter is not o
                 {
                   name[name.length - 1] = 'a';
                 }
