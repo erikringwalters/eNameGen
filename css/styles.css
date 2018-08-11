@@ -1,4 +1,4 @@
-element {
+ element {
   --mc: #302A29;
 }
 body{
@@ -8,9 +8,7 @@ font-family: arial;
 font-weight: lighter;
 font-family: 'Raleway', sans-serif;
 }
-.main{
-  color:antiquewhite;
-}
+
 button{
   background-color: #302a29;
 }
@@ -29,8 +27,7 @@ input{
   border: none;
   background-color: #faebd7;
   font-family: 'Raleway', sans-serif;
-
-
+  margin-bottom: 10px;
 }
 a, a:visited{
   color: black;
@@ -118,6 +115,26 @@ button:hover, button:focus{
   position: relative;
   height: parent.height;
 }
+
+/*pulled from angular tutorial*/
+.badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+.main{
+  color:antiquewhite;
+}
+
 #delta, #nabla{
   font-size: 32;
   cursor: pointer;
@@ -136,4 +153,8 @@ button:hover, button:focus{
 }
 #infoBtn{
   cursor: pointer;
+}
+#raceIcon{
+  margin-top: 10px;
+  padding: 10px;
 }

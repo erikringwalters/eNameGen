@@ -25,10 +25,10 @@ h1{
   margin-bottom: 30px;
 }
 input{
-  height: 30px;
-  width: 175px;
+  height: 50px;
+  width: 250px;
   text-align: center;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: lighter;
   outline: none;
   border: none;
@@ -59,7 +59,6 @@ button:hover, button:focus{
 .dropbtn {
     border: none;
     cursor: pointer;
-
 }
 
 /* Dropdown button on hover & focus */
@@ -110,13 +109,15 @@ button:hover, button:focus{
 .icon{
   margin-left: 10px;
   margin-right: 10px;
+  font-size: 50px;
+
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #cdc0b0}
 
 /* Show the dropdown menu (use JS to add this class to the
 .dropdown-content container when the user clicks on the dropdown button) */
-.show {
+.show{
   display:inline-block;
 }
 
@@ -124,6 +125,9 @@ button:hover, button:focus{
   position: relative;
 
   /* height: parent.height; */
+}
+.next, .prev{
+  font-size: 32;
 }
 #delta, #nabla{
   font-size: 32;
@@ -143,4 +147,7 @@ button:hover, button:focus{
 }
 #infoBtn{
   cursor: pointer;
+}
+#iconBar{
+  margin-top: 30px;
 }
