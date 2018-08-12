@@ -17,7 +17,7 @@ footer{
   color:antiquewhite;
 }
 button{
-  background-color: #302a29;
+  background-color: #302A29;
 }
 h1{
   margin-top:30px;
@@ -78,9 +78,10 @@ button:hover, button:focus{
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
-    position: relative;
+    position: sticky;
     background-color: antiquewhite;
     min-width: 160px;
+    max-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     right: 0;
@@ -137,8 +138,11 @@ button:hover, button:focus{
   color:#302A29;
   background-color: antiquewhite;
 }
-.btn-gen:hover{
-background-color: #cdc0b0
+.mod:hover{
+  background-color: #cdc0b0
+}
+.badge:hover{
+    color: #302A29 !important;
 }
 .badge{
   color: #302A29;
