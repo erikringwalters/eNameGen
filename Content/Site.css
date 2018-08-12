@@ -25,14 +25,15 @@ h1{
   margin-bottom: 30px;
 }
 input{
-  height: 50px;
-  width: 250px;
+  height: 40px;
+  width: 205px;
   text-align: center;
   font-size: 32px;
   font-weight: lighter;
   outline: none;
   border: none;
   background-color: #faebd7;
+  color: #302A29;
   font-family: 'Raleway', sans-serif;
 }
 a, a:visited{
@@ -107,8 +108,8 @@ button:hover, button:focus{
   padding: 5px
 }
 .icon{
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
   font-size: 50px;
 
 }
@@ -123,11 +124,37 @@ button:hover, button:focus{
 
 .dropdown-submenu{
   position: relative;
+  display: inline-block;
 
   /* height: parent.height; */
 }
 .next, .prev{
   font-size: 32;
+}
+.btn-gen{
+  height: 30px;
+  width: 50px;
+  color:#302A29;
+  background-color: antiquewhite;
+}
+.btn-gen:hover{
+background-color: #cdc0b0
+}
+.badge{
+  color: #302A29;
+  background-color: antiquewhite;
+}
+*.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
 }
 #delta, #nabla{
   font-size: 32;
