@@ -54,7 +54,7 @@ button{
   border: none;
   cursor: pointer;
 }
-button:hover, button:focus{
+button:hover, button:focus, a:hover, .icon:hover, img:hover{
   outline: none;
 }
 /* Dropdown Button (pulled from W3Schools)*/
@@ -94,7 +94,6 @@ button:hover, button:focus{
   /*margin: inherit;*/
   float: right;
   margin-left: 150px;
-
 }
 
 /* Links inside the dropdown */
@@ -107,6 +106,7 @@ button:hover, button:focus{
 }
 .mod{
   padding: 5px
+  float: left;
 }
 .icon{
   margin-left: 15px;
@@ -134,7 +134,7 @@ button:hover, button:focus{
 }
 .btn-gen{
   height: 30px;
-  width: 50px;
+  width: 205px;
   color:#302A29;
   background-color: antiquewhite;
 }

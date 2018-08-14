@@ -41,13 +41,9 @@ $(document).ready(function() {
         wpjs.coinFlip();
       },
 
-
-
       getRandNum: function(min, max) {
         return Math.floor(Math.random() * (max - min) + min);
       },
-
-
 
       selectDrop: function() {
         $(".dropbtn").click(function(event) {
@@ -58,8 +54,6 @@ $(document).ready(function() {
       },
 
       sampleFunc: function() {},
-
-
 
       closeDropdowns: function() {
         $(window).click(function() {
@@ -78,11 +72,10 @@ $(document).ready(function() {
       },
 
       selectMenu: function() {
-        $('#nabla').click(function() {
+        $('.icon').click(function() {
           document.getElementById("nablaDrop").classList.toggle("show");
         })
       },
-
 
       selectSize: function() {
         $(".sizeSub").click(function() {
@@ -155,8 +148,6 @@ $(document).ready(function() {
           $("#nameBox").val(name);//put name into input box
         })
       },
-
-
 
       pieceNameTogether: function(s, r, g) { //s for size and r for race
         var name = "";
@@ -261,15 +252,8 @@ $(document).ready(function() {
 
     };//end of wpjs
 
-
-
   $(function() {
-
     wpjs.init();
-
-
   });
-
-
 
 });

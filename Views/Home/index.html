@@ -25,7 +25,7 @@
 <h1 class="main">eNameGen</h1>
 <div>
 <div class="row">
-  <span>
+
     <a id='prev' class= 'prev mod main badge unselectable'>
     <
     </a>
@@ -37,63 +37,74 @@
 </span>
   </div>
 <div id="iconBar" class="row" >
-
-  <span class="icon unselectable" id="sizeIcon">o</span>
-  <span class="icon unselectable" id="raceIcon"><img src=../../icons/elfSharpSquareJaw.png height=50px></span>
-  <span class="icon unselectable" id="genderIcon">o</span>
-
+  <span>
+    <span class="icon unselectable dropbtn" id="size"><img src=../../icons/circle.png height=40px></span>
+    <span class="icon unselectable dropbtn" id="race"><img src=../../icons/elfSharpSquareJaw.png height=40px></span>
+    <span class="icon unselectable dropbtn" id="gender"><img src=../../icons/circle.png height=40px></span>
   </span>
   <br/>
+  <span>
+    <span>
+      <div class="dropdown">
+      <div id="sizeDrop" class="dropdown-content sub">
+        <div  class="mod main"> <!--This third div gives a little inner-color selection effect -->
+          <a href="" id='small' class="mod main sizeSub" title="Small">*</a>
+          <a href="" id='medium' class="mod main sizeSub" title="Medium">*</a>
+          <a href="" id='large' class="mod main sizeSub" title="Large">*</a>
+        </div>
+      </div>
+      </div>
+    </span>
 
+    <span>
+      <div class="dropdown">
+      <div id="raceDrop"class="dropdown-content sub">
+        <div  class="mod main"> <!--This third div gives a little inner-color selection effect -->
+          <a href="" id="basic" class="mod main raceSub" title="Basic">Basic</a>
+        <a href="" id="human" class="mod main raceSub" title="Human">Human</a>
+        <a href="" id="elf" class="mod main raceSub" title="Elf">Elf</a>
+        <a href="" id="orc" class="mod main raceSub" title="Orc">Orc</a>
+        </div>
+      </div>
+      </div>
+    </span>
+
+    <span>
+      <div class="dropdown">
+      <div id="genderDrop" class="dropdown-content sub">
+        <div  class="mod main"> <!--This third div gives a little inner-color selection effect -->
+        <a href="" id="male" class="mod main genderSub" title="Male">Male</a>
+        <a href="" id="female" class="mod main genderSub" title="Female">Female</a>
+        <a href="" id="other" class="mod main genderSub" title="Other">Other</a>
+        </div>
+      </div>
+      </div>
+    </span>
+  </span>
   </br/>
 
-  <a id="nabla"  class="dropbtn mod main badge unselectable">∇</a>
+  <!-- <a id="nabla"  class="dropbtn mod main badge unselectable">∇</a> -->
   <a id='delta' class="delta mod main btn btn-gen unselectable">
   ►
 </a>
 </div>
 <div id="nablaDrop" class="dropdown-content">
 
-      <a id="size" class="dropbtn mod main">Size</a>
+      <!-- <a id="size" class="dropbtn mod main">Size</a>
 
       <a id="race" class="dropbtn mod main center">Race</a>
 
       <a id="gender" class="dropbtn mod main">Gender</a>
 
-      <a id="feedback" class="dropbtn mod main">Feedback</a>
+      <a id="feedback" class="dropbtn mod main">Feedback</a> -->
 </div>
 
 
-<div class="dropdown">
-<div id="sizeDrop" class="dropdown-content sub">
-  <div  class="mod main"> <!--This third div gives a little inner-color selection effect -->
-    <a href="" id='small' class="mod main sizeSub" title="Small">*</a>
-    <a href="" id='medium' class="mod main sizeSub" title="Medium">*</a>
-    <a href="" id='large' class="mod main sizeSub" title="Large">*</a>
-  </div>
-</div>
-</div>
 
-<div class="dropdown">
-<div id="raceDrop"class="dropdown-content sub">
-  <div  class="mod main"> <!--This third div gives a little inner-color selection effect -->
-    <a href="" id="basic" class="mod main raceSub" title="Basic">Basic</a>
-  <a href="" id="human" class="mod main raceSub" title="Human">Human</a>
-  <a href="" id="elf" class="mod main raceSub" title="Elf">Elf</a>
-  <a href="" id="orc" class="mod main raceSub" title="Orc">Orc</a>
-  </div>
-</div>
-</div>
 
-<div class="dropdown">
-<div id="genderDrop" class="dropdown-content sub">
-  <div  class="mod main"> <!--This third div gives a little inner-color selection effect -->
-  <a href="" id="male" class="mod main genderSub" title="Male">Male</a>
-  <a href="" id="female" class="mod main genderSub" title="Female">Female</a>
-  <a href="" id="other" class="mod main genderSub" title="Other">Other</a>
-  </div>
-</div>
-</div>
+
+
+
 
 <div class="dropdown">
 <div id="feedbackDrop" class="dropdown-content sub">
