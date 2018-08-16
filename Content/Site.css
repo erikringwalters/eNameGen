@@ -36,6 +36,7 @@ input{
   background-color: #faebd7;
   color: #302A29;
   font-family: 'Raleway', sans-serif;
+  border-radius: 2px;
 }
 a, a:visited{
   color: black;
@@ -77,7 +78,7 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.dropdown-menu {
     display: none;
     position: sticky;
     background-color: antiquewhite;
@@ -97,12 +98,15 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-menu li {
     color: black;
     padding: 17px 25px;
-    font-weight: lighter;
+    font-weight: bold;
     text-decoration: none;
     display: block;
+}
+.dropdown-menu{
+  background-color: antiquewhite;
 }
 .mod{
   padding: 5px
@@ -115,7 +119,9 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
 
 }
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #cdc0b0}
+  li:hover {
+  background-color: #cdc0b0
+}
 
 /* Show the dropdown menu (use JS to add this class to the
 .dropdown-content container when the user clicks on the dropdown button) */
@@ -123,7 +129,7 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
   display:inline-block;
 }
 
-.dropdown-submenu{
+.dropdown-menu{
   position: relative;
   display: inline-block;
 
@@ -159,6 +165,9 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
    */
    -ms-user-select: none;
    user-select: none;
+}
+.btn-icon{
+  background-color: rgba(0, 0, 0, 0.0);
 }
 #delta, #nabla{
   font-size: 32;
