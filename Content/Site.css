@@ -148,6 +148,9 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
 .dropdown-header:hover{
   background-color: antiquewhite;
 }
+.btn-gen:hover{
+  background-color: #cdc0b0;
+}
 .badge:hover{
     background-color: #302A29 !important;
 }
@@ -194,7 +197,4 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
 }
 #raceIcon{
 
-}
-.btn-gen:hover{
-  background-color: #cdc0b0;
 }
