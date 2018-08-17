@@ -81,6 +81,7 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
 .dropdown-menu {
     display: none;
     position: sticky;
+    color: #302A29;
     background-color: antiquewhite;
     min-width: 160px;
     max-width: 160px;
@@ -144,11 +145,11 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
   color:#302A29;
   background-color: antiquewhite;
 }
-.mod:hover{
-  background-color: #cdc0b0
+.dropdown-header:hover{
+  background-color: antiquewhite;
 }
 .badge:hover{
-    color: #302A29 !important;
+    background-color: #302A29 !important;
 }
 .badge{
   color: #302A29;
@@ -193,4 +194,7 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
 }
 #raceIcon{
 
+}
+.btn-gen:hover{
+  background-color: #cdc0b0;
 }
