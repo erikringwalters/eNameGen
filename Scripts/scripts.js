@@ -3,7 +3,6 @@
 //test
 $(document).ready(function() {
 
-
   var wpjs = {
       model: null,
       currentDrop: null,
@@ -25,7 +24,10 @@ $(document).ready(function() {
         wpjs.generated = false;
 
         wpjs.selectMenu();
-        wpjs.closeDropdowns();
+        //wpjs.hideDrop();
+        //wpjs.closeDropdowns();
+        //wpjs.toggleDropdown();
+      //  wpjs.selectFeature(feature);
         wpjs.selectDrop();
         wpjs.selectSize();
         wpjs.selectRace();
@@ -53,22 +55,33 @@ $(document).ready(function() {
         });
       },
 
+      hideDrop: function() {
+        $('.dropbtn').change(function () {
+          $('.dropdown-content').hide()
+          $('#' + this.value).hide();
+      })
+    },
+
       sampleFunc: function() {},
 
       closeDropdowns: function() {
         $(window).click(function() {
-          if (!event.target.matches('.dropbtn')) //if clicked something other than dropdown button
+          // if (!event.target.matches('.dropbtn')) //if clicked something other than dropdown button
           {
             var dropdowns = document.getElementsByClassName("dropdown-content");
             var i;
             for (i = 0; i < dropdowns.length; i++) {
               var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
+              // if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
-              }
+              // }
             }
           }
         })
+      },
+
+      toggleDropdown: function() {
+          $(".dropdown").dropdown();
       },
 
       selectMenu: function() {
@@ -77,10 +90,17 @@ $(document).ready(function() {
         })
       },
 
+      // selectFeature: function(feature) {
+      //   var featureClass = $(feature).attr('class');
+      //   featureClass.click(function() {
+      //     event.preventDefault(); //prevent default otherwise the href would take over
+      //     wpjs.featureClass = jQuery(this).attr("id");
+      //   })
+      // },
+
       selectSize: function() {
         $(".sizeSub").click(function() {
-          event.preventDefault(); //this is here otherwise the href would take over
-          //alert(jQuery(this).attr("id"));
+          event.preventDefault(); //prevent default otherwise the href would take over
           wpjs.size = jQuery(this).attr("id");
         })
       },
@@ -88,7 +108,6 @@ $(document).ready(function() {
       selectRace: function() {
         $(".raceSub").click(function() {
           event.preventDefault(); //this is here otherwise the href would take over
-          //alert(jQuery(this).attr("id"));
           wpjs.race = jQuery(this).attr("id");
         })
       },
@@ -149,7 +168,7 @@ $(document).ready(function() {
         })
       },
 
-      pieceNameTogether: function(s, r, g) { //s for size and r for race
+      pieceNameTogether: function(s, r, g) { //size, race, gender
         var name = "";
         var a, b, c, d;
         a = eval("begs." + r + "[wpjs.getRandNum(0, begs." + r + ".length)]"); //using eval statements to clearly define 'r'

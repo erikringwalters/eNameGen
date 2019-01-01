@@ -1,6 +1,7 @@
 <!Doctype html>
 <head>
   <title>eNameGen</title>
+  <link href="../../css/styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <script src="../../Scripts/jquery-3.2.1.js" type="text/JavaScript"></script>
   <script src="../../arrays/begs.js"></script>
@@ -8,18 +9,18 @@
   <script src="../../arrays/mids.js"></script>
   <script src="../../arrays/ends.js"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fit to Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
-  <!-- <script src="0.js"></script> -->
-  <!-- <script type="text/JavaScript" src="js/queue.js"></script> -->
-  <script type="text/JavaScript" src="../../Scripts/scripts.js"></script>
-  <!-- <script type="text/JavaScript" src="../../Scripts/write.js"></script> -->
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+  <script>
+  $(document).ready(function(){
+    $(".dropdown-toggle").dropdown("toggle");
+  });
   </script>
+
   <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
   <!-- <link rel="stylesheet" href="icons/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"> -->
   <link rel="shortcut icon" href="../../Content/Images/triangle.png" type="image/x-icon">
@@ -41,9 +42,20 @@
   </div>
 <div id="iconBar" class="row" >
   <span>
-    <span class="icon unselectable dropbtn dropdown-toggle" type="button" data-toggle="dropdown" id="size"><img src=../../icons/circle.png height=40px></span>
-    <span class="icon unselectable dropbtn dropdown-toggle" type="button" data-toggle="dropdown" id="race"><img src=../../icons/elfSharpSquareJaw.png height=40px></span>
-    <span class="icon unselectable dropbtn dropdown-toggle"  type="button" data-toggle="dropdown" id="gender"><img src=../../icons/circle.png height=40px></span>
+    <span class="icon unselectable dropbtn dropdown-toggle" type="button"
+      data-toggle="dropdown" id="size">
+      <img src="../../icons/circle.png" height=40px>
+    </span>
+
+    <span class="icon unselectable dropbtn dropdown-toggle" type="button"
+      data-toggle="dropdown" id="race">
+      <img src="../../icons/elfSharpSquareJaw.png" height=40px>
+    </span>
+
+    <span class="icon unselectable dropbtn dropdown-toggle"  type="button"
+      data-toggle="dropdown" id="gender">
+      <img src="../../icons/circle.png" height=40px>
+    </span>
   </span>
   <br/>
   <!-- <span> -->
@@ -51,10 +63,12 @@
       <div class="dropdown">
       <div id="sizeDrop" class="dropdown-menu">
         <div  class="mod main"> <!--This third div gives a little inner-color selection effect -->
-          <li class="dropdown-header">Size</li>
-          <li href="" id='small' class="mod main sizeSub" title="Small">*</li>
-          <li href="" id='medium' class="mod main sizeSub" title="Medium">*</li>
-          <li href="" id='large' class="mod main sizeSub" title="Large">*</li>
+          <ul aria-labelledby="size">
+            <li class="dropdown-header">Size</li>
+            <li href="" id='small' class="mod main sizeSub" title="Small">*</li>
+            <li href="" id='medium' class="mod main sizeSub" title="Medium">*</li>
+            <li href="" id='large' class="mod main sizeSub" title="Large">*</li>
+            </ul>
         </div>
       </div>
       </div>

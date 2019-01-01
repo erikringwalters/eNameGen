@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Dropdown Example</h2>
+  <p>The <strong>toggle</strong> method toggles the dropdown.</p>
+  <div class="dropdown">
+
+<span>
+    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">
+      Example
+    <span class="caret"></span></button>
+
+
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+    </ul>
+      </span>
+  </div><br>
+  <p><strong>Note:</strong> For dropdowns, you should always include the data-toggle="dropdown" attribute. Do not rely solely on the toggle method, as it may not work as expected in all browsers.</p>
+
+</div>
+
+<div class="dropdown">
+<a class="dropdown-toggle" id="menu2" type="button" data-toggle="dropdown">
+  <img src="../../icons/elfSharpSquareJaw.png" height=40px>
+<span class="caret"></span></a>
+<!-- <span class="btn icon unselectable dropbtn dropdown-toggle" type="button"
+  data-toggle="dropdown" id="race">
+  <img src="../../icons/elfSharpSquareJaw.png" height=40px>
+</span> -->
+
+  <ul class="dropdown-menu" role="menu" aria-labelledby="menu2">
+    <!-- <li class="dropdown-header">Race</li> -->
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML2</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS2</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript2</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us2</a></li>
+    <!-- <li role="presentation" href="" id="basic" class="mod main raceSub" title="Basic">Basic</li>
+    <li role="presentation" href="" id="human" class="mod main raceSub" title="Human">Human</li>
+    <li role="presentation" href="" id="elf" class="mod main raceSub" title="Elf">Elf</li>
+    <li role="presentation" href="" id="orc" class="mod main raceSub" title="Orc">Orc</li> -->
+  </ul>
+  </div>
+  <div class="dropdown">
+  <a class="dropdown-toggle" id="menu3" type="button" data-toggle="dropdown">
+    <img src="../../icons/elfSharpSquareJaw.png" height=40px>
+  <span class="caret"></span></a>
+  <!-- <span class="btn icon unselectable dropbtn dropdown-toggle" type="button"
+    data-toggle="dropdown" id="race">
+    <img src="../../icons/elfSharpSquareJaw.png" height=40px>
+  </span> -->
+
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu3">
+      <!-- <li class="dropdown-header">Race</li> -->
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML2</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS2</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript2</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us2</a></li>
+      <!-- <li role="presentation" href="" id="basic" class="mod main raceSub" title="Basic">Basic</li>
+      <li role="presentation" href="" id="human" class="mod main raceSub" title="Human">Human</li>
+      <li role="presentation" href="" id="elf" class="mod main raceSub" title="Elf">Elf</li>
+      <li role="presentation" href="" id="orc" class="mod main raceSub" title="Orc">Orc</li> -->
+    </ul>
+    </div>
+<!-- <script>
+$(document).ready(function(){
+  $(".dropdown-toggle").dropdown("toggle");
+});
+</script> -->
+
+</body>
+</html>
