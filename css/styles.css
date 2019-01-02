@@ -135,6 +135,10 @@ button:hover, button:focus{
   color:antiquewhite;
 }
 
+.caret{
+  color: antiquewhite;
+}
+
 #delta, #nabla{
   font-size: 32;
   cursor: pointer;
