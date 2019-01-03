@@ -66,8 +66,7 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
 }
 
 .caret{
-  display: inline-block;
-  color: antiquewhite;
+    color: antiquewhite;
 }
 
 /* Dropdown button on hover & focus */
@@ -109,6 +108,9 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
 .dropdown-menu{
   background-color: antiquewhite;
   position: relative;
+}
+.dropdown-header{
+  font-weight: 700 !important;
 }
 .mod{
   padding: 5px
