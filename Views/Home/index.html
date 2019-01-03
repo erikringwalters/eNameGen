@@ -4,6 +4,7 @@
   <link href="../../css/styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <script src="../../Scripts/jquery-3.2.1.js" type="text/JavaScript"></script>
+  <script src="../../Scripts/scripts.js" type="text/Javascript"></script>
   <script src="../../arrays/begs.js"></script>
   <script src="../../arrays/shortEnds.js"></script>
   <script src="../../arrays/mids.js"></script>
@@ -14,12 +15,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <script>
-  $(document).ready(function(){
-    $(".dropdown-toggle").dropdown("toggle");
-  });
-  </script>
 
   <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
   <!-- <link rel="stylesheet" href="icons/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"> -->
@@ -40,14 +35,16 @@
     </a>
 </span>
   </div>
+
   <div class="row">
     <div class="btn-group" role="group" width="500px">
 
-      <div class="dropdown">
-      <a class="dropdown-toggle" id="size" type="button" data-toggle="dropdown">
+      <div class="dropdown col-sm-3">
+      <a class="dropdown-toggle" id="gender" type="button" data-toggle="dropdown">
         <img src="../../icons/circle.png" height=40px>
+
       <span class="caret unselectable"></span></a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="size">
+        <ul class="dropdown-menu" role="menu" aria-labelledby="gender">
           <li role="presentation" class="dropdown-header">Size</li>
           <li role="presentation" href="" id='small' class="mod main sizeSub" title="Small">*</li>
           <li role="presentation" href="" id='medium' class="mod main sizeSub" title="Medium">*</li>
@@ -55,7 +52,7 @@
         </ul>
       </div>
 
-    <div class="dropdown">
+    <div class="dropdown col-sm-3">
     <a class="dropdown-toggle" id="race" type="button" data-toggle="dropdown">
       <img src="../../icons/elfSharpSquareJaw.png" height=40px>
     <span class="caret unselectable"></span></a>
@@ -69,11 +66,11 @@
       </ul>
       </div>
 
-
-      <div class="dropdown">
+      <div class="dropdown col-sm-3">
       <a class="dropdown-toggle" id="gender" type="button" data-toggle="dropdown">
         <img src="../../icons/circle.png" height=40px>
       <span class="caret unselectable"></span></a>
+
         <ul class="dropdown-menu" role="menu" aria-labelledby="gender">
           <li role="presentation" class="dropdown-header">Gender</li>
           <li role="presentation" href="" id="male" class="mod main genderSub" title="Male">Male</li>
@@ -81,9 +78,10 @@
           <li role="presentation" href="" id="other" class="mod main genderSub" title="Other">Other</li>
         </ul>
         </div>
-    </div>
 
+    </div>
   </div>
+
     <!-- </span>
   </span> -->
   </br/>
