@@ -60,23 +60,28 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
     border: none;
     cursor: pointer;
 }
+.btn-group{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.caret{
+  display: inline-block;
+  color: antiquewhite;
+}
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-    /*background-color: #3e8e41;*/
     outline: none;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
-    /* display: inline-block; */
-    /* margin-top: 10px; */
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-menu {
-    /* display: none; */
     position: sticky;
     color: #302A29;
     background-color: antiquewhite;
@@ -89,8 +94,7 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
 }
 
 .sub {
-  /*position: relative;*/
-  /*margin: inherit;*/
+
   float: right;
   margin-left: 150px;
 }
@@ -101,12 +105,10 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
     padding: 17px 25px;
     font-weight: bold;
     text-decoration: none;
-    /* display: block; */
 }
 .dropdown-menu{
   background-color: antiquewhite;
   position: relative;
-  /* display: inline-block; */
 }
 .mod{
   padding: 5px
@@ -123,11 +125,6 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
   background-color: #cdc0b0
 }
 
-/* Show the dropdown menu (use JS to add this class to the
-.dropdown-content container when the user clicks on the dropdown button) */
-/* .show{
-  display:inline-block;
-} */
 
 .next, .prev{
   font-size: 32;
@@ -155,11 +152,6 @@ button:hover, button:focus, a:hover, .icon:hover, img:hover{
    -moz-user-select: -moz-none;
    -khtml-user-select: none;
    -webkit-user-select: none;
-
-   /*
-     Introduced in IE 10.
-     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
-   */
    -ms-user-select: none;
    user-select: none;
 }
