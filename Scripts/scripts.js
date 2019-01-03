@@ -24,10 +24,6 @@ $(document).ready(function() {
         wpjs.generated = false;
 
         wpjs.selectMenu();
-        //wpjs.hideDrop();
-        //wpjs.closeDropdowns();
-        //wpjs.toggleDropdown();
-      //  wpjs.selectFeature(feature);
         wpjs.selectDrop();
         wpjs.selectSize();
         wpjs.selectRace();

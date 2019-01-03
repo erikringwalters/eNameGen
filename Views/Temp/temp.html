@@ -34,36 +34,46 @@
 </div>
 
 <div class="row">
+  <div class="btn-group" role="group" width="500px">
 
-<div class="btn-group" role="group" width="500px">
-<div class="dropdown">
-<a class="dropdown-toggle" id="menu2" type="button" data-toggle="dropdown">
-  <img src="../../icons/elfSharpSquareJaw.png" height=40px>
-<span class="caret"></span></a>
-
-  <ul class="dropdown-menu" role="menu" aria-labelledby="menu2">
-
-    <li role="presentation" href="" id="basic" class="mod main raceSub" title="Basic">Basic</li>
-    <li role="presentation" href="" id="human" class="mod main raceSub" title="Human">Human</li>
-    <li role="presentation" href="" id="elf" class="mod main raceSub" title="Elf">Elf</li>
-    <li role="presentation" href="" id="orc" class="mod main raceSub" title="Orc">Orc</li>
-  </ul>
-  </div>
-
+    <div class="dropdown">
+    <a class="dropdown-toggle" id="gender" type="button" data-toggle="dropdown">
+      <img src="../../icons/circle.png" height=40px>
+    <span class="caret unselectable"></span></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="gender">
+        <li role="presentation" class="dropdown-header">Size</li>
+        <li role="presentation" href="" id='small' class="mod main sizeSub" title="Small">*</li>
+        <li role="presentation" href="" id='medium' class="mod main sizeSub" title="Medium">*</li>
+        <li role="presentation" href="" id='large' class="mod main sizeSub" title="Large">*</li>
+      </ul>
+    </div>
 
   <div class="dropdown">
-  <a class="dropdown-toggle" id="menu3" type="button" data-toggle="dropdown">
+  <a class="dropdown-toggle" id="race" type="button" data-toggle="dropdown">
     <img src="../../icons/elfSharpSquareJaw.png" height=40px>
-  <span class="caret"></span></a>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="menu3">
+  <span class="caret unselectable"></span></a>
 
+    <ul class="dropdown-menu" role="menu" aria-labelledby="race">
       <li role="presentation" href="" id="basic" class="mod main raceSub" title="Basic">Basic</li>
       <li role="presentation" href="" id="human" class="mod main raceSub" title="Human">Human</li>
       <li role="presentation" href="" id="elf" class="mod main raceSub" title="Elf">Elf</li>
       <li role="presentation" href="" id="orc" class="mod main raceSub" title="Orc">Orc</li>
     </ul>
     </div>
-</div>
+
+
+    <div class="dropdown">
+    <a class="dropdown-toggle" id="gender" type="button" data-toggle="dropdown">
+      <img src="../../icons/circle.png" height=40px>
+    <span class="caret unselectable"></span></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="gender">
+        <li role="presentation" class="dropdown-header">Gender</li>
+        <li role="presentation" href="" id="male" class="mod main genderSub" title="Male">Male</li>
+        <li role="presentation" href="" id="female" class="mod main genderSub" title="Female">Female</li>
+        <li role="presentation" href="" id="other" class="mod main genderSub" title="Other">Other</li>
+      </ul>
+      </div>
+  </div>
 
 </div>
 <!-- <script>
@@ -71,6 +81,10 @@ $(document).ready(function(){
   $(".dropdown-toggle").dropdown("toggle");
 });
 </script> -->
+
+
+
+
 
 </body>
 </html>

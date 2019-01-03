@@ -53,7 +53,11 @@ button:hover, button:focus{
 .dropbtn {
     border: none;
     cursor: pointer;
-
+}
+.caret {
+    border: none;
+    cursor: pointer;
+    outline: none;
 }
 
 /* Dropdown button on hover & focus */
@@ -87,17 +91,16 @@ button:hover, button:focus{
   /*margin: inherit;*/
   float: left;
   margin-right: 150px;
-
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+/* .dropdown-content a {
     color: black;
     padding: 17px 25px;
     font-weight: lighter;
     text-decoration: none;
     display: block;
-}
+} */
 .mod{
   padding: 5px
 }

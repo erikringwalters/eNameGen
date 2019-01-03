@@ -40,65 +40,50 @@
     </a>
 </span>
   </div>
-<div id="iconBar" class="row" >
-  <span>
-    <span class="icon unselectable dropbtn dropdown-toggle" type="button"
-      data-toggle="dropdown" id="size">
-      <img src="../../icons/circle.png" height=40px>
-    </span>
+  <div class="row">
+    <div class="btn-group" role="group" width="500px">
 
-    <span class="icon unselectable dropbtn dropdown-toggle" type="button"
-      data-toggle="dropdown" id="race">
+      <div class="dropdown">
+      <a class="dropdown-toggle" id="size" type="button" data-toggle="dropdown">
+        <img src="../../icons/circle.png" height=40px>
+      <span class="caret unselectable"></span></a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="size">
+          <li role="presentation" class="dropdown-header">Size</li>
+          <li role="presentation" href="" id='small' class="mod main sizeSub" title="Small">*</li>
+          <li role="presentation" href="" id='medium' class="mod main sizeSub" title="Medium">*</li>
+          <li role="presentation" href="" id='large' class="mod main sizeSub" title="Large">*</li>
+        </ul>
+      </div>
+
+    <div class="dropdown">
+    <a class="dropdown-toggle" id="race" type="button" data-toggle="dropdown">
       <img src="../../icons/elfSharpSquareJaw.png" height=40px>
-    </span>
+    <span class="caret unselectable"></span></a>
 
-    <span class="icon unselectable dropbtn dropdown-toggle"  type="button"
-      data-toggle="dropdown" id="gender">
-      <img src="../../icons/circle.png" height=40px>
-    </span>
-  </span>
-  <br/>
-  <!-- <span> -->
-    <!-- <span> -->
-      <div class="dropdown">
-      <div id="sizeDrop" class="dropdown-menu">
-        <div  class="mod main"> <!--This third div gives a little inner-color selection effect -->
-          <ul aria-labelledby="size">
-            <li class="dropdown-header">Size</li>
-            <li href="" id='small' class="mod main sizeSub" title="Small">*</li>
-            <li href="" id='medium' class="mod main sizeSub" title="Medium">*</li>
-            <li href="" id='large' class="mod main sizeSub" title="Large">*</li>
-            </ul>
-        </div>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="race">
+        <li role="presentation" class="dropdown-header">Race</li>
+        <li role="presentation" href="" id="basic" class="mod main raceSub" title="Basic">Basic</li>
+        <li role="presentation" href="" id="human" class="mod main raceSub" title="Human">Human</li>
+        <li role="presentation" href="" id="elf" class="mod main raceSub" title="Elf">Elf</li>
+        <li role="presentation" href="" id="orc" class="mod main raceSub" title="Orc">Orc</li>
+      </ul>
       </div>
-      </div>
-    <!-- </span> -->
 
-    <!-- <span> -->
-      <div class="dropdown">
-      <div id="raceDrop"class="dropdown-menu">
-        <div  class="mod main"> <!--This third div gives a little inner-color selection effect -->
-          <li class="dropdown-header">Race</li>
-          <li href="" id="basic" class="mod main raceSub" title="Basic">Basic</li>
-          <li href="" id="human" class="mod main raceSub" title="Human">Human</li>
-          <li href="" id="elf" class="mod main raceSub" title="Elf">Elf</li>
-          <li href="" id="orc" class="mod main raceSub" title="Orc">Orc</li>
-        </div>
-      </div>
-      </div>
-    <!-- </span> -->
 
-    <!-- <span> -->
       <div class="dropdown">
-      <div id="genderDrop" class="dropdown-menu">
-        <div  class="mod main"> <!--This third div gives a little inner-color selection effect -->
-          <li class="dropdown-header">Gender</li>
-          <li href="" id="male" class="mod main genderSub" title="Male">Male</li>
-          <li href="" id="female" class="mod main genderSub" title="Female">Female</li>
-          <li href="" id="other" class="mod main genderSub" title="Other">Other</li>
+      <a class="dropdown-toggle" id="gender" type="button" data-toggle="dropdown">
+        <img src="../../icons/circle.png" height=40px>
+      <span class="caret unselectable"></span></a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="gender">
+          <li role="presentation" class="dropdown-header">Gender</li>
+          <li role="presentation" href="" id="male" class="mod main genderSub" title="Male">Male</li>
+          <li role="presentation" href="" id="female" class="mod main genderSub" title="Female">Female</li>
+          <li role="presentation" href="" id="other" class="mod main genderSub" title="Other">Other</li>
+        </ul>
         </div>
-      </div>
-      </div>
+    </div>
+
+  </div>
     <!-- </span>
   </span> -->
   </br/>
