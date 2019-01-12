@@ -37,6 +37,7 @@ $(document).ready(function() {
         wpjs.like();
         wpjs.dislike();
         wpjs.coinFlip();
+        wpjs.setCookie();
       },
 
       getRandNum: function(min, max) {
@@ -263,6 +264,11 @@ $(document).ready(function() {
         if (Math.floor(Math.random() * (100 - 0)) < 50) {
           return true
         } else return false;
+      },
+
+      //cookies
+      setCookie: function() {
+        $.cookie("example", "foo", { path: '/' });
       }
 
     };//end of wpjs
