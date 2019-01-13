@@ -1,6 +1,3 @@
-// import mids.js;
-// import ends.js;
-//test
 $(document).ready(function() {
 
   var wpjs = {
@@ -38,6 +35,7 @@ $(document).ready(function() {
         wpjs.dislike();
         wpjs.coinFlip();
         wpjs.setCookie();
+        // wpjs.alertCookie();
       },
 
       getRandNum: function(min, max) {
@@ -268,8 +266,16 @@ $(document).ready(function() {
 
       //cookies
       setCookie: function() {
-        $.cookie("example", "foo", { path: '/' });
-      }
+        $('#delta').click(function(){
+          Cookies.set('newCookie', 'yummy');
+        })
+      },
+
+      // alertCookie: function() {
+      //   $('#delta').click(function(){
+      //     alert( $.cookie("example") );
+      //   })
+      // }
 
     };//end of wpjs
 

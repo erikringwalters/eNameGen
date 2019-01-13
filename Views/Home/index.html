@@ -1,10 +1,11 @@
 <!Doctype html>
 <head>
   <title>eNameGen</title>
-  <!-- <link href="../../css/styles.css" rel="stylesheet" type="text/css"> -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <script src="../../Scripts/jquery-3.2.1.js" type="text/JavaScript"></script>
-  <script src="../../Scripts/scripts.js" type="text/Javascript"></script>
+  <script src="../../Scripts/jquery-3.2.1.js" type="text/javascript"></script>
+  <script src="../../Scripts/scripts.js" type="text/javascript"></script>
+  <script src="../../Scripts/js-cookie/src/js.cookie.js" type="text/javascript"></script>
+
   <script src="../../arrays/begs.js"></script>
   <script src="../../arrays/shortEnds.js"></script>
   <script src="../../arrays/mids.js"></script>
@@ -35,14 +36,14 @@
 </span>
   </div>
 
+<!-- Button Row -->
   <div class="row">
     <div class="btn-group" role="group" width="500px">
 
+<!-- Dropdowns -->
       <div class="dropdown col-xs-4">
       <a class="dropdown-toggle" id="gender" type="button" data-toggle="dropdown">
         <img src="../../icons/circle.png" height=40px>
-
-      <!-- <span class="caret unselectable"></span> -->
     </a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="gender">
           <li role="presentation" class="dropdown-header">Size</li>
@@ -56,9 +57,7 @@
     <div class="dropdown col-xs-4">
     <a class="dropdown-toggle" id="race" type="button" data-toggle="dropdown">
       <img src="../../icons/elfSharpSquareJaw.png" height=40px>
-    <!-- <span class="caret unselectable"></span> -->
   </a>
-
       <ul class="dropdown-menu" role="menu" aria-labelledby="race">
         <li role="presentation" class="dropdown-header">Race</li>
          <div class="dropdown-divider"></div>
@@ -72,9 +71,7 @@
       <div class="dropdown col-xs-4">
       <a class="dropdown-toggle" id="gender" type="button" data-toggle="dropdown">
         <img src="../../icons/circle.png" height=40px>
-      <!-- <span class="caret unselectable"></span> -->
     </a>
-
         <ul class="dropdown-menu" role="menu" aria-labelledby="gender">
           <li role="presentation" class="dropdown-header">Gender</li>
            <div class="dropdown-divider"></div>
@@ -88,41 +85,10 @@
   </div>
 
   <br/>
-
-  <!-- <a id="nabla"  class="dropbtn mod main badge unselectable">∇</a> -->
   <a id='delta' class="delta mod main btn btn-gen unselectable">
   ►
 </a>
 </div>
-<div id="nablaDrop" class="dropdown-content">
-
-      <!-- <a id="size" class="dropbtn mod main">Size</a>
-
-      <a id="race" class="dropbtn mod main center">Race</a>
-
-      <a id="gender" class="dropbtn mod main">Gender</a>
-
-      <a id="feedback" class="dropbtn mod main">Feedback</a> -->
-</div>
-
-
-
-
-
-
-<!--
-
-<div class="dropdown">
-<div id="feedbackDrop" class="dropdown-content sub">
-  <div class="mod main">
-    <a href="" id="like" class="mod main" title="Like generated name">Like</a>
-
-    <a href="" id="dislike" class="mod main" title="Dislike generated name">Dislike</a>
-  </div>
-</div>
-</div> -->
-
-
 
 <footer>
   <!-- <button id="infoBtn">i</button> -->
